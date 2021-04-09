@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_about" />
+
+    <ImageView
+        android:layout_width="246px"
+        android:layout_height="246px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="162px"/>
+
+    <TextView
+        android:id="@+id/tv_verson_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30px"
+        android:textColor="@color/_333333"
+        android:textSize="54px" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="162px"
+        android:layout_marginTop="162px"
+        android:gravity="center_vertical"
+        android:paddingLeft="45px"
+        android:paddingRight="45px"
+        android:text="@string/at_verson_declare"
+        android:background="@drawable/bt_open_curtain_selector"
+        android:textColor="@color/_333333"
+        android:drawableRight="@drawable/atico_junp"
+        android:textSize="45px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45px"
+        android:layout_height="3px"
+        android:background="@color/_F0F0F0" />
+
+    <TextView
+        android:id="@+id/tv_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="162px"
+        android:gravity="center_vertical"
+        android:paddingLeft="45px"
+        android:paddingRight="45px"
+        android:text="@string/at_grade"
+        android:background="@drawable/bt_open_curtain_selector"
+        android:textColor="@color/_333333"
+        android:drawableRight="@drawable/atico_junp"
+        android:textSize="45px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45px"
+        android:layout_height="3px"
+        android:background="@color/_F0F0F0" />
+
+    <TextView
+        android:id="@+id/tv__service_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="162px"
+        android:gravity="center_vertical"
+        android:paddingLeft="45px"
+        android:paddingRight="45px"
+        android:text="@string/at_service_agreement"
+        android:background="@drawable/bt_open_curtain_selector"
+        android:textColor="@color/_333333"
+        android:drawableRight="@drawable/atico_junp"
+        android:textSize="45px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45px"
+        android:layout_height="3px"
+        android:background="@color/_F0F0F0" />
+</LinearLayout>

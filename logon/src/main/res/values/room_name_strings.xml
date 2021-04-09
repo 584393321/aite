@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 房间-->
+    <string name="at_all">全部设备</string>
+    <string name="at_chufang">厨房</string>
+    <string name="at_keting">客厅</string>
+    <string name="at_yangtai">阳台</string>
+    <string name="at_weishengjian">卫生间</string>
+    <string name="at_xuanguan">玄关</string>
+    <string name="at_canting">餐厅</string>
+    <string name="at_zhuwo">主卧</string>
+    <string name="at_kewo">客卧</string>
+    <string name="at_ciwo">次卧</string>
+    <string name="at_kid">儿童房</string>
+    <string name="at_baomu">保姆房</string>
+    <string name="at_shufang">书房</string>
+    <string name="at_yimaojian">衣帽间</string>
+    <string name="at_commonly">自定义</string>
+    <string name="at_more">更多</string>
+</resources>

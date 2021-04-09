@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_F5F5F5"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="1080px"
+        android:src="@drawable/atbg_s_rlgl"
+        android:layout_height="927px"
+        android:scaleType="fitXY"/>
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_old_young_care"
+        app:titlebar_background="@color/transparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="63px"
+        android:layout_below="@id/titlebar"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_function_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="45px"
+            android:drawableRight="@drawable/atico_junp"
+            android:text="功能设置"
+            android:gravity="center_vertical"
+            android:textColor="@color/_333333"
+            android:textSize="60px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="969px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45px"
+            android:layout_marginRight="45px"
+            android:layout_marginTop="51px"
+            android:text="@string/at_function_hint"
+            android:textColor="@color/_666666"
+            android:textSize="36px" />
+
+        <com.aliyun.ayland.widget.ATObservableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="60px"
+                android:paddingRight="60px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_find_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="60px"
+                    android:background="@drawable/selector_18px_ffffff_eeeeee"
+                    android:text="@string/at_search_for_old_or_children"
+                    android:paddingLeft="90px"
+                    android:drawableLeft="@drawable/at_lygh_ico_weizhi"
+                    android:drawablePadding="90px"
+                    android:textColor="@color/_333333"
+                    android:textSize="51px" />
+
+                <TextView
+                    android:id="@+id/tv_old_young_alone"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="45px"
+                    android:background="@drawable/selector_18px_ffffff_eeeeee"
+                    android:text="@string/at_travel_reminder_for_the_elderly_or_children"
+                    android:paddingLeft="90px"
+                    android:drawableLeft="@drawable/at_lygh_ico_chuxing"
+                    android:drawablePadding="90px"
+                    android:textColor="@color/_333333"
+                    android:textSize="51px" />
+
+                <TextView
+                    android:id="@+id/tv_personnel_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="45px"
+                    android:background="@drawable/selector_18px_ffffff_eeeeee"
+                    android:text="@string/at_travel_record"
+                    android:paddingLeft="90px"
+                    android:drawableLeft="@drawable/at_lygh_ico_jilu"
+                    android:drawablePadding="90px"
+                    android:textColor="@color/_333333"
+                    android:textSize="51px" />
+
+                <TextView
+                    android:id="@+id/tv_public_monitoring"
+                    android:layout_width="match_parent"
+                    android:layout_height="300px"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="45px"
+                    android:background="@drawable/selector_18px_ffffff_eeeeee"
+                    android:text="@string/at_village_share_video"
+                    android:paddingLeft="90px"
+                    android:drawableLeft="@drawable/at_icon_s_gongquanfang"
+                    android:drawablePadding="90px"
+                    android:textColor="@color/_333333"
+                    android:textSize="51px" />
+            </LinearLayout>
+        </com.aliyun.ayland.widget.ATObservableScrollView>
+    </LinearLayout>
+</RelativeLayout>

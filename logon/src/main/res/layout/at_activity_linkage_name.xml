@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_linkage_name"
+        app:show_ib="true" />
+
+    <com.aliyun.ayland.widget.ATClearEditText
+        android:id="@+id/clearEditText"
+        android:layout_width="match_parent"
+        android:layout_height="171px"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:hint="@string/at_input_scene_name"
+        android:maxLength="10"
+        android:paddingLeft="48px"
+        android:paddingRight="48px"
+        android:textColor="@color/_333333"
+        android:textColorHint="@color/_999999"
+        android:textSize="45px" />
+</LinearLayout>

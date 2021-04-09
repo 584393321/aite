@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="816px"
+        android:layout_height="426px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_30pxf5f5f5">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingTop="108px"
+            android:textColor="@color/_505050"
+            android:textSize="48px" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="132px"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@color/_666666"
+                android:textSize="48px" />
+
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@color/_EBB080"
+                android:textSize="48px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_above="@id/linearLayout"
+            android:background="@color/_EEEEEE" />
+
+        <View
+            android:layout_width="3px"
+            android:layout_height="132px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/_EEEEEE" />
+    </RelativeLayout>
+</RelativeLayout>

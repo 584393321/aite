@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/smartRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.header.MaterialHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/_B58876">
+
+        <com.aliyun.ayland.base.autolayout.ATAutoAppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:elevation="0dp"
+            app:elevation="0dp">
+
+            <com.aliyun.ayland.base.autolayout.ATAutoCollapsingToolbarLayout
+                android:id="@+id/collapsingToolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:collapsedTitleGravity="top|center"
+                app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+                app:contentInsetStartWithNavigation="0dp"
+                app:expandedTitleGravity="top|center"
+                app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="204px"
+                    android:orientation="vertical"
+                    android:paddingLeft="45px"
+                    android:paddingRight="45px"
+                    android:background="@drawable/atbg_tianmaojingling">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45px">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/at_tmall_wizard_authorization"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="18px"
+                            android:textColor="@color/white"
+                            android:textSize="60px"/>
+
+                        <TextView
+                            android:id="@+id/tv_authorization"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:drawableRight="@drawable/atico_junp_w"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/_CCFFFFFF"
+                            android:textSize="45px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="39px"
+                        android:paddingRight="39px"
+                        android:layout_marginTop="90px">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/at_synchronize_tmall_linkage"
+                            android:textColor="@color/white"
+                            android:textSize="42px" />
+
+                        <TextView
+                            android:id="@+id/tv_associate_linkage"
+                            android:layout_width="138px"
+                            android:layout_height="66px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_150px_white"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:text="@string/at_associate"
+                            android:textColor="@color/_86523C"
+                            android:textSize="36px" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="39px"
+                        android:layout_marginRight="39px"
+                        android:layout_marginTop="18px"
+                        android:text="@string/at_synchronize_tmall_linkage_tip"
+                        android:textColor="@color/_E5D7C8"
+                        android:textSize="33px" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="39px"
+                        android:paddingRight="39px"
+                        android:layout_marginTop="40px">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/at_synchronize_tmall_device"
+                            android:textColor="@color/white"
+                            android:textSize="42px" />
+
+                        <TextView
+                            android:id="@+id/tv_associate_device"
+                            android:layout_width="138px"
+                            android:layout_height="66px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/shape_150px_white"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:text="@string/at_associate"
+                            android:textColor="@color/_86523C"
+                            android:textSize="36px" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18px"
+                        android:layout_marginLeft="39px"
+                        android:layout_marginRight="39px"
+                        android:text="@string/at_synchronize_tmall_device_tip"
+                        android:textColor="@color/_E5D7C8"
+                        android:textSize="33px" />
+                </LinearLayout>
+
+                <com.aliyun.ayland.base.autolayout.ATAutoToolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="132px"
+                    android:layout_marginTop="58px"
+                    app:layout_collapseMode="pin"
+                    app:titleTextColor="@color/_333333" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/toolbar_padding_top"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="1">
+
+                    <TextView
+                        android:id="@+id/tv_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="132px"
+                        android:background="@drawable/selector_transparent_login_btn"
+                        android:drawableLeft="@drawable/selector_back_white_black"
+                        android:drawablePadding="19px"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="42px"
+                        android:paddingRight="42px"
+                        android:textColor="@color/at_selector_textcolor_ffffff333333"
+                        android:textSize="42px"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="132px"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/at_tmall_wizard"
+                        android:textColor="@color/_333333"
+                        android:textSize="54px" />
+
+                    <TextView
+                        android:id="@+id/tv_bind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="132px"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/selector_transparent_login_btn"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="42px"
+                        android:paddingRight="42px"
+                        android:text="@string/at_bind_instructions"
+                        android:textColor="@color/at_selector_textcolor_ffffff333333"
+                        android:textSize="42px"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+            </com.aliyun.ayland.base.autolayout.ATAutoCollapsingToolbarLayout>
+        </com.aliyun.ayland.base.autolayout.ATAutoAppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/_F5F5F5"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="45px"
+                android:paddingRight="45px"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="72px"
+                    android:text="@string/at_associated_scenarios"
+                    android:textColor="@color/_666666"
+                    android:textSize="45px" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

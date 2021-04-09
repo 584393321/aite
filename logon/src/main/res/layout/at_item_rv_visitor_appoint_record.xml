@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="45px"
+    android:paddingLeft="45px"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="12px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/atico_fangkeyuyue" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120px"
+            android:textStyle="bold"
+            android:textColor="@color/_333333"
+            android:textSize="54px" />
+
+        <TextView
+            android:id="@+id/tv_intermediary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@id/tv_name"
+            android:background="@drawable/shape_9px_f15e5e"
+            android:paddingLeft="6px"
+            android:paddingRight="6px"
+            android:text="@string/at_intermediary"
+            android:textColor="@color/white"
+            android:textSize="33px"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/_999999"
+            android:textSize="42px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="24px"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/at_phone_"
+            android:textColor="@color/_666666"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_333333"
+            android:textSize="36px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="30px"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/at_visit_time_1"
+            android:textColor="@color/_666666"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_visite_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_333333"
+            android:textSize="36px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="30px"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/at_trip_mode_"
+            android:textColor="@color/_666666"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_trip_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_333333"
+            android:textSize="36px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="30px"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/at_visit_time_2"
+            android:textColor="@color/_666666"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_333333"
+            android:textSize="36px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="30px"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/at_leave_time_"
+            android:textColor="@color/_666666"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_leave_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_333333"
+            android:textSize="36px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_park_fee"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="30px"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/at_park_fee_"
+            android:textColor="@color/_666666"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_park_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_333333"
+            android:textSize="36px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="45px"
+        android:layout_marginBottom="48px"
+        android:background="@color/_F0F0F0"
+        android:layout_height="3px" />
+</LinearLayout>

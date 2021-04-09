@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_publish_dynamic" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/_F5F5F5" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="347px"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="@string/at_share_something_new"
+        android:maxLength="140"
+        android:paddingBottom="52px"
+        android:paddingLeft="43px"
+        android:paddingRight="43px"
+        android:paddingTop="52px"
+        android:textColor="@color/_333333"
+        android:textColorHint="@color/_999999"
+        android:textSize="45px" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:paddingLeft="42px" />
+
+    <RelativeLayout
+        android:id="@+id/rl_come_from"
+        android:layout_width="match_parent"
+        android:layout_height="174px"
+        android:background="@drawable/selector_white"
+        android:padding="42px">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/_EEEEEE" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/_EEEEEE" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/at_come_from"
+            android:textColor="@color/_333333"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_come_from"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="32px"
+            android:drawableRight="@drawable/atico_junp"
+            android:gravity="center"
+            android:paddingLeft="42px"
+            android:paddingRight="42px"
+            android:text="@string/at_square"
+            android:textColor="@color/_999999"
+            android:textSize="42px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_who_can_see"
+        android:layout_width="match_parent"
+        android:layout_height="168px"
+        android:background="@drawable/selector_white"
+        android:padding="42px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/at_which_can_see"
+            android:textColor="@color/_333333"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_which_can_see"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="32px"
+            android:drawableRight="@drawable/atico_junp"
+            android:gravity="center"
+            android:paddingLeft="42px"
+            android:paddingRight="42px"
+            android:text="@string/at_open"
+            android:textColor="@color/_999999"
+            android:textSize="42px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="42px"
+        android:background="@color/_EEEEEE" />
+</LinearLayout>

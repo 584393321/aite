@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/athome_yydj_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/eVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.evideo.voip.sdk.EVVideoView"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:textSize="90px"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="45px"
+        android:layout_marginRight="45px"
+        android:layout_marginTop="558px"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_name1"
+        android:textSize="48px"
+        android:text="@string/at_advice_you_talkback"
+        android:textColor="@color/_F5F5F5"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="36px"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60px"
+        android:gravity="bottom"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30px"
+                android:textColor="@color/white"
+                android:textSize="48px" />
+
+            <TextView
+                android:id="@+id/tv_hang_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="57px"
+                android:drawableTop="@drawable/at_home_yydj_ico_jujue"
+                android:gravity="center"
+                android:text="@string/at_hang_up"
+                android:textColor="@color/white"
+                android:textSize="39px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:drawablePadding="57px"
+            android:layout_marginLeft="162px"
+            android:drawableTop="@drawable/athome_yydj_ico_kaimen"
+            android:gravity="center"
+            android:text="@string/at_open_door"
+            android:textColor="@color/white"
+            android:textSize="39px" />
+
+        <TextView
+            android:id="@+id/tv_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="57px"
+            android:layout_marginLeft="162px"
+            android:drawableTop="@drawable/at_home_yydj_ico_jieting"
+            android:gravity="center"
+            android:text="@string/at_answer"
+            android:textColor="@color/white"
+            android:textSize="39px" />
+    </LinearLayout>
+</RelativeLayout>

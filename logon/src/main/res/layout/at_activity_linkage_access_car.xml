@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_vehicle_access" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@color/_333333"
+        app:srlPrimaryColor="@color/white">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.aliyun.ayland.widget.ATObservableScrollView
+            android:id="@+id/observableScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="84px"
+                    android:layout_marginTop="45px"
+                    android:text="@string/at_choose_vehicle"
+                    android:textColor="@color/_333333"
+                    android:textSize="54px" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_vehicle_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="84px"
+                    android:layout_marginTop="42px"
+                    android:text="@string/at_choose_trigger_time"
+                    android:textColor="@color/_333333"
+                    android:textSize="54px"  />
+
+                <RelativeLayout
+                    android:id="@+id/rl_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="162px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginLeft="39px"
+                    android:layout_marginRight="39px"
+                    android:background="@drawable/selector_12px_f5f5f5_eeeeee"
+                    android:paddingRight="45px"
+                    android:paddingLeft="45px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_in"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <CheckBox
+                        android:id="@+id/cb_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/at_selector_checkbox"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="162px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginLeft="39px"
+                    android:layout_marginRight="39px"
+                    android:background="@drawable/selector_12px_f5f5f5_eeeeee"
+                    android:paddingRight="45px"
+                    android:paddingLeft="45px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_out"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <CheckBox
+                        android:id="@+id/cb_out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/at_selector_checkbox"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_in_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="162px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginLeft="39px"
+                    android:layout_marginRight="39px"
+                    android:background="@drawable/selector_12px_f5f5f5_eeeeee"
+                    android:paddingRight="45px"
+                    android:paddingLeft="45px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_in_out"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <CheckBox
+                        android:id="@+id/cb_in_out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/at_selector_checkbox"
+                        android:checked="true"
+                        android:clickable="false" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.aliyun.ayland.widget.ATObservableScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

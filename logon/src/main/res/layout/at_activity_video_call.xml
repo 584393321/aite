@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/at_home_yydj_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="486px">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:src="@drawable/at_home_yydj_bg_b" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72px"
+            android:textColor="@color/white"
+            android:textSize="90px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:text="@string/at_advice_you_talkback"
+            android:textColor="@color/_F5F5F5"
+            android:textSize="48px" />
+    </RelativeLayout>
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/gLSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45px"
+        android:layout_marginLeft="102px"
+        android:layout_marginRight="102px">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30px"
+                android:textColor="@color/white"
+                android:textSize="48px" />
+
+            <TextView
+                android:id="@+id/tv_hang_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="30px"
+                android:drawableTop="@drawable/at_home_yydj_ico_jujue"
+                android:gravity="center"
+                android:text="@string/at_hang_up"
+                android:textColor="@color/white"
+                android:textSize="39px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="30px"
+            android:drawableTop="@drawable/at_home_yydj_ico_kaimen"
+            android:gravity="center"
+            android:text="@string/at_open_door"
+            android:textColor="@color/white"
+            android:textSize="39px" />
+
+        <TextView
+            android:id="@+id/tv_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="30px"
+            android:drawableTop="@drawable/at_home_yydj_ico_jieting"
+            android:gravity="center"
+            android:text="@string/at_answer"
+            android:textColor="@color/white"
+            android:textSize="39px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45px"
+        android:layout_marginLeft="186px"
+        android:layout_marginRight="186px"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30px"
+                android:textColor="@color/white"
+                android:textSize="48px" />
+
+            <TextView
+                android:id="@+id/tv_hang_up1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="30px"
+                android:drawableTop="@drawable/at_home_yydj_ico_jujue"
+                android:gravity="center"
+                android:text="@string/at_hang_up"
+                android:textColor="@color/white"
+                android:textSize="39px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_open1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="30px"
+            android:drawableTop="@drawable/at_home_yydj_ico_kaimen"
+            android:gravity="center"
+            android:text="@string/at_open_door"
+            android:textColor="@color/white"
+            android:textSize="39px" />
+    </RelativeLayout>
+</RelativeLayout>

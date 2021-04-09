@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/popup_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/at_list_wodeshebei"
+        android:paddingTop="18px"
+        android:layout_marginRight="30px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_add_device"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:drawablePadding="30px"
+            android:gravity="center"
+            android:text="@string/at_add_device"
+            android:drawableLeft="@drawable/at_list_tj_shebei"
+            android:textColor="@color/_333333"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_manage_room"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:drawablePadding="30px"
+            android:drawableLeft="@drawable/at_home_ico_sb_glfj"
+            android:gravity="center"
+            android:text="@string/at_manage_room"
+            android:textColor="@color/_333333"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_device_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:drawablePadding="30px"
+            android:drawableLeft="@drawable/at_home_ico_sb_sbglygx"
+            android:gravity="center"
+            android:text="@string/at_device_manage_share"
+            android:textColor="@color/_333333"
+            android:textSize="45px" />
+    </LinearLayout>
+</RelativeLayout>

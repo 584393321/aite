@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_F5F5F5"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_score_rule" />
+
+    <com.aliyun.ayland.widget.ATObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="46px"
+            android:paddingRight="46px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52px"
+                android:drawableLeft="@drawable/shape_6px_ebb080"
+                android:drawablePadding="42px"
+                android:gravity="center_vertical"
+                android:text="嗨生活积分规则"
+                android:textColor="@color/_333333"
+                android:textSize="51px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="73px"
+                android:drawableLeft="@drawable/shape_circle_12px_666666"
+                android:drawablePadding="28px"
+                android:text="用户在嗨生活的积极活动可获得积分奖励。"
+                android:textColor="@color/_666666"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:drawableLeft="@drawable/shape_circle_12px_666666"
+                android:drawablePadding="28px"
+                android:text="预约健身活动以及预约亲子盒子可日内获得多次积分，其余的活动每日最多获取一次积分，详细可查看以下规则。"
+                android:textColor="@color/_666666"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:drawableLeft="@drawable/shape_circle_12px_666666"
+                android:drawablePadding="28px"
+                android:text="每日的晚上22:00，刷新每日得分。"
+                android:textColor="@color/_666666"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110px"
+                android:text="日内可多次重复："
+                android:textColor="@color/_333333"
+                android:textSize="42px"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预约健身"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="+10分"
+                    android:textColor="@color/_EBB080"
+                    android:textSize="42px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预约亲子盒子"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="+10分"
+                    android:textColor="@color/_EBB080"
+                    android:textSize="42px" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110px"
+                android:text="日内单次："
+                android:textColor="@color/_333333"
+                android:textSize="42px"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发广场动态"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="+5分"
+                    android:textColor="@color/_EBB080"
+                    android:textSize="42px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="动态评论"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="+5分"
+                    android:textColor="@color/_EBB080"
+                    android:textSize="42px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="动态点赞"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="+5分"
+                    android:textColor="@color/_EBB080"
+                    android:textSize="42px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加入群组"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="+5分"
+                    android:textColor="@color/_EBB080"
+                    android:textSize="42px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="81px"
+                android:layout_marginTop="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发群组动态"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="+5分"
+                    android:textColor="@color/_EBB080"
+                    android:textSize="42px" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.aliyun.ayland.widget.ATObservableScrollView>
+</LinearLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+            android:id="@+id/titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bartext="@string/at_access_record" />
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="171px"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/rl_select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_white">
+
+                <View
+                    android:layout_width="6px"
+                    android:layout_height="90px"
+                    android:layout_centerVertical="true"
+                    android:background="@color/_EEEEEE" />
+
+                <TextView
+                    android:id="@+id/tv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="29px"
+                    android:text="@string/at_select"
+                    android:textColor="@color/_333333"
+                    android:textSize="42px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24px"
+                    android:layout_toRightOf="@id/tv_search"
+                    android:src="@drawable/at_ic_shuaixuan" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_car_walk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90px"
+                    android:layout_marginLeft="42px"
+                    android:background="@drawable/selector_18px_f3f3f3_f7de92_to_f9b49c_"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingLeft="72px"
+                    android:paddingRight="72px"
+                    android:text="@string/at_car"
+                    android:textColor="@color/at_selector_ffffff999999"
+                    android:textSize="42px" />
+
+                <RadioButton
+                    android:id="@+id/rb_walk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90px"
+                    android:layout_marginLeft="42px"
+                    android:background="@drawable/selector_18px_f3f3f3_f7de92_to_f9b49c_"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingLeft="72px"
+                    android:paddingRight="72px"
+                    android:text="@string/at_walk"
+                    android:textColor="@color/at_selector_ffffff999999"
+                    android:textSize="42px" />
+            </RadioGroup>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/_F5F5F5" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/popup_anima"
+            android:layout_width="match_parent"
+            android:layout_height="814px"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="45px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:text="@string/at_form_"
+                android:textColor="@color/_999999"
+                android:textSize="39px" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45px"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_in_out"
+                    android:layout_width="225px"
+                    android:layout_height="90px"
+                    android:background="@drawable/selector_radiogroup_in_out"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/at_in_out"
+                    android:textColor="@color/_333333"
+                    android:textSize="42px" />
+
+                <RadioButton
+                    android:id="@+id/rb_in"
+                    android:layout_width="225px"
+                    android:layout_height="90px"
+                    android:layout_marginLeft="114px"
+                    android:background="@drawable/selector_radiogroup_in_out"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/at_in"
+                    android:textColor="@color/_333333"
+                    android:textSize="42px" />
+
+                <RadioButton
+                    android:id="@+id/rb_out"
+                    android:layout_width="225px"
+                    android:layout_height="90px"
+                    android:layout_marginLeft="114px"
+                    android:background="@drawable/selector_radiogroup_in_out"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/at_out"
+                    android:textColor="@color/_333333"
+                    android:textSize="42px" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="54px"
+                android:background="@color/_EEEEEE" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="51px"
+                android:text="@string/at_time_1"
+                android:textColor="@color/_999999"
+                android:textSize="39px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginTop="48px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="450px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_18pxf3f3f3"
+                    android:gravity="center"
+                    android:text="@string/at_please_choose"
+                    android:textColor="@color/_BBBBBB"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="39px"
+                    android:text="@string/at_to"
+                    android:textColor="@color/_999999"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="450px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="39px"
+                    android:background="@drawable/shape_18pxf3f3f3"
+                    android:gravity="center"
+                    android:text="@string/at_please_choose"
+                    android:textColor="@color/_BBBBBB"
+                    android:textSize="42px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="63px"
+                android:background="@color/_EEEEEE" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="207px"
+                android:layout_height="90px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="48px"
+                android:background="@drawable/selector_66px_fcd6abf8e8c1_f7de92f9b49c"
+                android:gravity="center"
+                android:text="@string/at_sure"
+                android:textColor="@color/white"
+                android:textSize="51px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/click_to_dismiss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/_66333333"
+            android:orientation="vertical" />
+    </LinearLayout>
+</RelativeLayout>

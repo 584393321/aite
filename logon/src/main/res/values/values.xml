@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="arc_colors_background">
+        <item>#C7B8A4</item>
+        <item>#C7B8A4</item>
+    </array>
+    <array name="arc_colors_default1">
+        <item>#FFC156</item>
+        <item>#FF9723</item>
+    </array>
+    <declare-styleable name="ATSemicircleProgressView">
+        <attr name="semicircleSize" format="dimension" />
+        <attr name="semicirclebackgroundLineColor" format="color" />
+        <attr name="semicirclefrontLineColor" format="color" />
+        <attr name="semicircletitleColor" format="color" />
+        <attr name="semicirclesubtitleColor" format="color" />
+        <attr name="semicirclelineSize" format="dimension" />
+        <attr name="semicirclebackgroundlineSize" format="dimension" />
+        <attr name="semicircletitleSize" format="dimension" />
+        <attr name="semicirclesubtitleSize" format="dimension" />
+        <attr name="semicircletitleText" format="string" />
+        <attr name="semicirclesubtitleText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ATBanner">
+        <attr name="delay_time" format="integer" />
+        <attr name="scroll_time" format="integer" />
+        <attr name="is_auto_play" format="boolean" />
+        <attr name="is_loop" format="boolean" />
+        <attr name="title_background" format="color|reference" />
+        <attr name="title_textcolor" format="color" />
+        <attr name="title_textsize" format="dimension" />
+        <attr name="title_height" format="dimension" />
+        <attr name="indicator_width" format="dimension" />
+        <attr name="indicator_height" format="dimension" />
+        <attr name="indicator_margin" format="dimension" />
+        <attr name="indicator_padding" format="dimension" />
+        <attr name="indicator_drawable_selected" format="reference" />
+        <attr name="indicator_drawable_unselected" format="reference" />
+        <attr name="banner_default_image" format="reference" />
+        <!-- 设置左右2边缩进距离 -->
+        <attr name="page_left_margin" format="dimension" />
+        <attr name="page_right_margin" format="dimension" />
+        <attr name="arc_height" format="dimension" />
+        <attr name="arc_start_color" format="color|reference" />
+        <attr name="arc_end_color" format="color|reference" />
+        <attr name="arc_direction" format="enum">
+            <enum name="up" value="0" />
+            <enum name="down" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <dimen name="pickerview_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_btn_textsize">17sp</dimen>
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <dimen name="pickerview_topbar_padding">20dp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">18sp</dimen>
+    <integer name="animation_default_duration">300</integer>
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+
+    <style name="custom_dialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+
+    <style name="picker_view_scale_anim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pickerview_dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/pickerview_dialog_scale_out</item>
+    </style>
+
+    <style name="picker_view_slide_anim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pickerview_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/pickerview_slide_out_bottom</item>
+    </style>
+
+    <declare-styleable name="pickerview">
+        <attr name="wheelview_gravity">
+            <enum name="center" value="17" />
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="wheelview_textSize" format="dimension" />
+        <attr name="wheelview_textColorOut" format="color" />
+        <attr name="wheelview_textColorCenter" format="color" />
+        <attr name="wheelview_dividerColor" format="color" />
+        <attr name="wheelview_lineSpacingMultiplier" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ATNineGridImageView">
+        <attr name="singleImgSize" format="dimension" />
+        <attr name="imgGap" format="dimension" />
+        <attr name="maxSize" format="integer" />
+        <attr name="showStyle" format="enum">
+            <enum name="grid" value="0" />
+            <enum name="fill" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

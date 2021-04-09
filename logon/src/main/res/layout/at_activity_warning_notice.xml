@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_warning_notice"
+        app:show_ib="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="496px"
+        android:layout_below="@id/titlebar"
+        android:layout_marginLeft="42px"
+        android:layout_marginRight="42px"
+        android:layout_marginTop="70px"
+        android:background="@drawable/shape_6px_f8f1e9"
+        android:orientation="vertical"
+        android:paddingLeft="42px"
+        android:paddingRight="42px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58px"
+            android:text="@string/at_warning_tip1"
+            android:textColor="@color/_333333"
+            android:textSize="60px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75px"
+            android:textColor="@color/_666666"
+            android:textSize="48px" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="426px"
+        android:layout_height="132px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="88px"
+        android:background="@drawable/selector_66px_fcd6abf8e8c1_f7de92f9b49c"
+        android:text="@string/at_removal"
+        android:textColor="@color/white"
+        android:textSize="51px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60px"
+        android:text="@string/at_warning_tip2"
+        android:textColor="@color/_666666"
+        android:textSize="39px" />
+</RelativeLayout>

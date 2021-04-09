@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/_E6E2DF"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/at_bg_shebei"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+            android:id="@+id/titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:show_ib="true"
+            app:title_color_drawable="@color/transparent"
+            app:titlebar_background="@color/transparent" />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/smartRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlAccentColor="@android:color/white"
+            app:srlPrimaryColor="#444444">
+
+            <com.scwang.smartrefresh.header.MaterialHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10px"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_recommend"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="174px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_manual"
+                            android:layout_width="180px"
+                            android:gravity="center"
+                            android:drawablePadding="24px"
+                            android:text="@string/at_manual"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/tv_linkage"
+                            android:layout_width="180px"
+                            android:gravity="center"
+                            android:drawablePadding="24px"
+                            android:text="@string/at_linkage"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+                            android:id="@+id/swipeMenuRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="39px"
+                            android:layout_marginLeft="39px" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_empty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="200px"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/at_pic_zanwuliandong" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="24px"
+                                android:text="@string/at_have_no_linkage_"
+                                android:textColor="@color/_999999"
+                                android:textSize="39px" />
+
+                            <TextView
+                                android:id="@+id/tv_add_linkage"
+                                android:layout_width="480px"
+                                android:layout_height="132px"
+                                android:layout_marginTop="24px"
+                                android:background="@drawable/selector_66px_bbbbbbffffff_e6e6e6"
+                                android:gravity="center"
+                                android:text="@string/at_add_linkage"
+                                android:textColor="@color/_666666"
+                                android:textSize="51px" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</RelativeLayout>

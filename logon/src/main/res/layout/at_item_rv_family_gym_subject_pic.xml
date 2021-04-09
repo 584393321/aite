@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="253px"
+    android:background="@drawable/at_hsh_bg_qzyy_a"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117px"
+        android:textColor="@color/white"
+        android:textSize="48px" />
+</RelativeLayout>

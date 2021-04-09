@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_content"
+    android:background="@drawable/selector_18px_ffffff_eeeeee"
+    android:layout_width="486px"
+    android:layout_height="468px"
+    android:layout_marginBottom="40px"
+    android:layout_marginRight="30px">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180px">
+
+            <ImageView
+                android:id="@+id/img_device"
+                android:layout_width="132px"
+                android:layout_height="132px"
+                android:layout_marginTop="48px"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/at_home_ico_shebeigongyong" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="24px"
+                android:layout_height="24px"
+                android:layout_margin="39px"
+                android:background="@drawable/shape_circle_ef4c4c_24px"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39px"
+            android:layout_marginLeft="39px"
+            android:layout_marginRight="39px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/_333333"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_specs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_999999"
+            android:textSize="30px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55px"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/_EBB080"
+                android:textSize="38px" />
+
+            <com.aliyun.ayland.widget.ATSwitchButton
+                android:id="@+id/switchview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="21px"
+                android:clickable="false"
+                android:visibility="gone"
+                app:kswBackColor="@color/at_ksw_md_back_color"
+                app:kswThumbDrawable="@drawable/ksw_md_thumb"
+                app:kswThumbHeight="@dimen/ksw_md_thumb_ripple_size"
+                app:kswThumbMarginBottom="-14dp"
+                app:kswThumbMarginLeft="-16dp"
+                app:kswThumbMarginRight="-16dp"
+                app:kswThumbMarginTop="-14dp"
+                app:kswThumbRangeRatio="1.45"
+                app:kswThumbWidth="@dimen/ksw_md_thumb_ripple_size" />
+
+            <LinearLayout
+                android:id="@+id/ll_curtain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21px"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/ll_curtain_open"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/selector_white"
+                    android:padding="15px"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/at_home_ico_chuanglianquankai" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_curtain_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="19px"
+                    android:background="@drawable/selector_white"
+                    android:padding="15px"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/at_home_ico_chuanglianzhanting" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_curtain_close"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="19px"
+                    android:background="@drawable/selector_white"
+                    android:padding="15px"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/at_home_ico_chuanglianquanguan" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_add"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120px"
+            android:src="@drawable/at_ioc_tianjia" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28px"
+            android:text="@string/at_add_device"
+            android:textColor="@color/_999999"
+            android:textSize="42px" />
+    </LinearLayout>
+</RelativeLayout>

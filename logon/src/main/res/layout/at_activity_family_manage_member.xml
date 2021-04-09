@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_family_manage" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="39px"
+            android:paddingRight="39px">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="192px"
+                android:layout_marginTop="24px"
+                android:layout_marginLeft="6px"
+                android:layout_marginRight="6px"
+                android:background="@drawable/shape_12px_a79d95">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60px"
+                    android:textColor="@color/white"
+                    android:textSize="45px" />
+
+                <TextView
+                    android:id="@+id/tv_identity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="6px"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/atic_bianji_a"
+                    android:layout_marginRight="30px"
+                    android:textColor="@color/white"
+                    android:textSize="42px"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="108px"
+                android:layout_marginLeft="6px"
+                android:text="@string/at_family_room_list"
+                android:textColor="@color/_999999"
+                android:textSize="45px" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45px"
+                android:background="@drawable/shape_12px_3pxeeeeee_fdfdfd"/>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

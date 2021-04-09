@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/at_home_bg_rllv_m"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/status_bar"
+        style="@style/status_bar"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="142px"
+        android:layout_below="@id/status_bar"
+        android:elevation="10px">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_transparent_login_btn"
+            android:drawableLeft="@drawable/ioc_back_w"
+            android:gravity="center_vertical"
+            android:paddingLeft="42px"
+            android:paddingRight="42px"
+            android:textColor="@color/white"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tv_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="@string/at_tmall_wizard_authorization"
+            android:textColor="@color/white"
+            android:textSize="54px" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="426px"
+        android:layout_height="126px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48px"
+        android:layout_marginTop="28px"
+        android:background="@drawable/selector_66px_fcd6abf8e8c1_f7de92f9b49c"
+        android:textColor="@color/white"
+        android:textSize="51px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button"
+        android:layout_below="@id/rl_title"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/shape_18pxffffff"
+        android:orientation="vertical">
+
+        <com.aliyun.ayland.widget.ATObservableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45px"
+                android:layout_marginRight="45px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="54px"
+                    android:lineSpacingExtra="5px"
+                    android:text="用户授权语音精灵后，可在龙光汇语音精灵上享用由龙光汇提供的特色智慧语音服务："
+                    android:textColor="@color/_666666"
+                    android:textSize="39px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64px"
+                    android:text="语音场景"
+                    android:textColor="@color/_333333"
+                    android:textSize="51px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28px"
+                    android:lineSpacingExtra="5px"
+                    android:text="用户可在龙光生活APP-语音精灵应用下关联六个已经启用的智慧家庭场景，关联后用户可对龙光汇语音精灵说：“语音精灵，请旭小熊帮我打开回家模式”，语音精灵便会执行回家模式"
+                    android:textColor="@color/_666666"
+                    android:textSize="39px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64px"
+                    android:text="设备控制"
+                    android:textColor="@color/_333333"
+                    android:textSize="51px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28px"
+                    android:lineSpacingExtra="5px"
+                    android:text="用户可对龙光汇语音精灵说：“语音精灵，请旭小熊帮我打开客厅的灯”，语音精灵便会打开客厅的灯。 \n用户可在语音精灵端查看更多设备控制的语音技能"
+                    android:textColor="@color/_666666"
+                    android:textSize="39px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64px"
+                    android:text="家庭服务"
+                    android:textColor="@color/_333333"
+                    android:textSize="51px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28px"
+                    android:lineSpacingExtra="5px"
+                    android:text="龙光汇语音精灵上的家庭服务包括用户可以用语音来交互的服务，包括查询室内环境、查询小区环境、预约缤纷盒子、呼叫电梯、公共区家人查找;用户也可以享用由龙光汇语音精灵端推送的服务，包括老幼单独出行提醒、家庭安防报警、云对讲。 \n\n其中云对讲需要用户在龙光汇生活APP-语音精灵应用下启用语音精灵端云对讲。 \n\n其中老幼单独出行提醒、家庭安防报警、云对讲的呼叫通知三个功能需要用户在龙光汇生活APP-语音精灵应用下启用消息通知服务"
+                    android:textColor="@color/_666666"
+                    android:textSize="39px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64px"
+                    android:text="消息通知"
+                    android:textColor="@color/_333333"
+                    android:textSize="51px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28px"
+                    android:layout_marginBottom="60px"
+                    android:lineSpacingExtra="5px"
+                    android:text="用户可在龙光汇语音精灵端查看所有的消息通知，包括来自家庭服务中的老幼单独出行、家庭安防报警、云对讲的呼叫通知，也包括来自龙光汇语音精灵后台的系统通知"
+                    android:textColor="@color/_666666"
+                    android:textSize="39px" />
+            </LinearLayout>
+        </com.aliyun.ayland.widget.ATObservableScrollView>
+    </LinearLayout>
+</RelativeLayout>

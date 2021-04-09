@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_add_car" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="168px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60px"
+            android:background="@drawable/shape_circle_60px_fda448"
+            android:layout_marginLeft="45px"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="1"
+            android:textSize="36px"
+            android:layout_height="60px"/>
+
+        <TextView
+            android:layout_width="186px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9px"
+            android:text="@string/at_upload_driving_permit"
+            android:textSize="36px"
+            android:textColor="@color/_333333"
+            android:layout_gravity="center_vertical"/>
+
+        <View
+            android:layout_width="150px"
+            android:background="@drawable/shape_xu_cccccc"
+            android:layout_height="3px"/>
+
+        <TextView
+            android:id="@+id/tv_two1"
+            android:layout_width="60px"
+            android:background="@drawable/shape_circle_60px_eeeeee"
+            android:layout_marginLeft="33px"
+            android:gravity="center"
+            android:textColor="@color/_CCCCCC"
+            android:text="2"
+            android:textSize="36px"
+            android:layout_height="60px"/>
+
+        <TextView
+            android:id="@+id/tv_two2"
+            android:layout_width="156px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9px"
+            android:text="@string/at_write_message"
+            android:textSize="36px"
+            android:textColor="@color/_CCCCCC"
+            android:layout_gravity="center_vertical"/>
+
+        <View
+            android:layout_width="150px"
+            android:background="@drawable/shape_xu_cccccc"
+            android:layout_height="3px"/>
+
+        <TextView
+            android:id="@+id/tv_three1"
+            android:layout_width="60px"
+            android:background="@drawable/shape_circle_60px_eeeeee"
+            android:layout_marginLeft="33px"
+            android:gravity="center"
+            android:textColor="@color/_CCCCCC"
+            android:text="3"
+            android:textSize="36px"
+            android:layout_height="60px"/>
+
+        <TextView
+            android:id="@+id/tv_three2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9px"
+            android:text="@string/at_done"
+            android:textSize="36px"
+            android:textColor="@color/_CCCCCC"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/_F5F5F5"
+        android:layout_height="30px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20px"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/framelayout_add_car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

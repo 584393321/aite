@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="474px"
+        android:layout_height="474px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45px"
+        android:background="@drawable/shape_12pxf7f7f7">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42px"
+        android:layout_marginTop="20px"
+        android:textColor="@color/_333333"
+        android:textSize="48px" />
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42px"
+        android:layout_marginRight="42px"
+        android:layout_marginTop="8px"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/_999999"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42px"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginRight="42px"
+        android:layout_marginTop="24px" />
+</LinearLayout>

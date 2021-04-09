@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.anthouse.lgcs">
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- 权限级别: dangerous -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 权限级别: normal -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission android:name="com.anthouse.lgcs.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.anthouse.lgcs.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.aliyun.ayland.global.ATApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/at_logo"
+        android:label="@string/at_app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label,android:allowBackup,android:theme,android:icon">
+
+        <meta-data
+            android:name="com.alibaba.app.appkey"
+            android:value="32585218" />
+        <meta-data
+            android:name="com.alibaba.app.appsecret"
+            android:value="51c54e69d97672187a6066c64ace8b7f" />
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1100190813030272#xuhui" />
+
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+
+        <!--适配全面屏-->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATWelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--<receiver-->
+            <!--android:name="com.aliyun.ayland.core.MyMessageReceiver"-->
+            <!--android:exported="false">-->
+            <!--&lt;!&ndash; 为保证receiver安全，建议设置不可导出，如需对其他应用开放可通过android：permission进行限制 &ndash;&gt;-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />-->
+            <!--</intent-filter>-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />-->
+            <!--</intent-filter>-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.alibaba.sdk.android.push.RECEIVE" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.VisitorRegist1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.VisitorRegist2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.AccessRecordActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.aliyun.ayland.service.RecordService"/>
+
+        <service
+            android:name="com.taobao.accs.internal.AccsJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":channel" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.anthouse.lgcs.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <receiver
+            android:name="com.aliyun.ayland.service.KeepAliveReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.aliyun.ayland.service.SocketServer"
+            android:exported="true" />
+        <service android:name="com.aliyun.ayland.service.SocketServer$InnerService" />
+        <activity
+            android:name="com.baidu.ocr.ui.camera.CameraActivity"
+            android:configChanges="screenSize|orientation"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+    </application>
+</manifest>

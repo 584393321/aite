@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="162px"
+    android:layout_marginLeft="39px"
+    android:layout_marginRight="39px"
+    android:layout_marginTop="30px"
+    android:background="@drawable/selector_12px_f5f5f5_eeeeee">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="45px"
+        android:src="@drawable/at_home_ico_shebeigongyong" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="177px"
+        android:textColor="@color/_333333"
+        android:textSize="42px" />
+
+    <ImageView
+        android:id="@+id/img_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:padding="42px"
+        android:layout_marginRight="3px"
+        android:layout_alignParentRight="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="45px"
+        android:button="@drawable/at_selector_checkbox"
+        android:clickable="false"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_jump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="45px"
+        android:src="@drawable/atico_junp"
+        android:visibility="gone" />
+</RelativeLayout>

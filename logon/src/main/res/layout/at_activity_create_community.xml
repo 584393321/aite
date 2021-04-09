@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_create_community"
+        app:show_ib="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/_F5F5F5" />
+
+    <com.aliyun.ayland.widget.ATObservableScrollView
+        android:id="@+id/observableScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42px"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="168px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="40px">
+
+                <TextView
+                    android:layout_width="310px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/at_community_name"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <EditText
+                    android:id="@+id/et_community_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/at_input_community_name"
+                    android:maxLength="15"
+                    android:textColor="@color/_333333"
+                    android:textColorHint="@color/_CCCCCC"
+                    android:textSize="45px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/_EEEEEE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="198px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="40px">
+
+                <TextView
+                    android:layout_width="310px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/at_community_profile"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <com.aliyun.ayland.widget.ATMyCircleImageView
+                    android:id="@+id/img_userprofile"
+                    android:layout_width="138px"
+                    android:layout_height="138px"
+                    android:src="@drawable/at_hsh_icon_cjsqtx" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/_EEEEEE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="168px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="40px">
+
+                <TextView
+                    android:layout_width="310px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/at_create_person"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:id="@+id/tv_create_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/_333333"
+                    android:textSize="45px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/_EEEEEE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="168px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="40px">
+
+                <TextView
+                    android:layout_width="310px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/at_phone2"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/_333333"
+                    android:textSize="45px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/_EEEEEE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="168px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="40px">
+
+                <TextView
+                    android:layout_width="310px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/at_address"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/_333333"
+                    android:textSize="45px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/_EEEEEE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="168px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="40px">
+
+                <TextView
+                    android:layout_width="310px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/at_community_style"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <LinearLayout
+                    android:id="@+id/ll_community_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_community_style"
+                        android:layout_width="640px"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/atico_junp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/_EEEEEE" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="40px">
+
+                <TextView
+                    android:layout_width="310px"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="52px"
+                    android:paddingTop="52px"
+                    android:text="@string/at_community_info"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <EditText
+                    android:id="@+id/et_community_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="@string/at_input_community_info"
+                    android:maxLength="100"
+                    android:paddingBottom="52px"
+                    android:paddingRight="52px"
+                    android:paddingTop="52px"
+                    android:textColor="@color/_333333"
+                    android:textColorHint="@color/_CCCCCC"
+                    android:textSize="45px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/_EEEEEE" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="426px"
+                android:layout_height="132px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="141px"
+                android:layout_marginTop="120px"
+                android:background="@drawable/selector_66px_fcd6abf8e8c1_f7de92f9b49c"
+                android:gravity="center"
+                android:text="@string/at_submit_to_property"
+                android:textColor="@color/white"
+                android:textSize="51px" />
+        </LinearLayout>
+    </com.aliyun.ayland.widget.ATObservableScrollView>
+</LinearLayout>

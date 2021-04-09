@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9px"
+        android:text="您在做瑜伽时可能会有其他人使用跑步机等其他设备，您也可以选择独享盒子"
+        android:textColor="@color/_999999"
+        android:textSize="36px" />
+</LinearLayout>

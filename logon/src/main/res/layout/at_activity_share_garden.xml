@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_F5F5F5"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/at_bg_kongzhonghuayuan" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/toolbar_padding_top">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="150px"
+            android:layout_height="132px"
+            android:background="@drawable/selector_transparent_login_btn"
+            android:gravity="center_vertical"
+            android:paddingLeft="42px"
+            android:paddingRight="42px"
+            android:src="@drawable/ioc_back_w" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="132px" />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_content">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="60px"
+                    android:layout_marginRight="30px"
+                    android:background="@drawable/shape_12px_ffffff"
+                    android:orientation="vertical"
+                    android:padding="45px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_choose_date"
+                        android:textColor="@color/_333333"
+                        android:textSize="54px"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12px"
+                        android:drawableRight="@drawable/atico_junp"
+                        android:gravity="center_vertical"
+                        android:text="2020-06-06"
+                        android:textColor="@color/_666666"
+                        android:textSize="42px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="51px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/at_choose_subject"
+                            android:textColor="@color/_333333"
+                            android:textSize="54px"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12px"
+                            android:textColor="@color/_999999"
+                            android:textSize="36px" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_subject_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12px"
+                        android:layout_marginBottom="12px"
+                        android:drawableRight="@drawable/atico_junp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/_666666"
+                        android:textSize="42px" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="51px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/_444444"
+                        android:text="@string/at_choose_time"
+                        android:layout_marginLeft="75px"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:drawableRight="@drawable/ioc_xiangxia"
+                        android:textColor="@color/_E2B3A1"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="45px"
+                        android:textSize="42px" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_subject_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36px"
+                    android:paddingLeft="39px"
+                    android:paddingRight="39px" />
+
+                <LinearLayout
+                    android:layout_width="996px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="42px"
+                    android:layout_marginBottom="200px"
+                    android:background="@drawable/shape_12pxffffff"
+                    android:elevation="10px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21px"
+                        android:layout_marginTop="45px"
+                        android:drawableLeft="@drawable/shape_6px_f4c454_to_ef9733"
+                        android:drawablePadding="24px"
+                        android:gravity="center_vertical"
+                        android:text="@string/at_selected_time"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_selecter_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:paddingLeft="35px"
+                        android:paddingRight="35px" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_top1pxffffff"
+        android:elevation="20px">
+
+        <LinearLayout
+            android:id="@+id/ll_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="75px">
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="420px"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/_333333"
+                android:textSize="51px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:src="@drawable/ico_junp_shouhui" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_pre_gym"
+            android:layout_width="450px"
+            android:layout_height="144px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:gravity="center"
+            android:background="@drawable/selector_72px_86523c_b5a198"
+            android:text="@string/at_begin_appointment"
+            android:textColor="@color/white"
+            android:textSize="51px" />
+    </RelativeLayout>
+</RelativeLayout>

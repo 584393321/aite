@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="840px"
+        android:layout_height="513px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_18pxffffff">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingTop="147px"
+            android:textColor="@color/_333333"
+            android:textSize="54px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210px"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="18px"
+            android:paddingRight="18px">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0px"
+                android:layout_height="120px"
+                android:layout_marginLeft="21px"
+                android:layout_marginRight="21px"
+                android:layout_weight="1"
+                android:background="@drawable/selector_72px_c6bcb1_9a9690"
+                android:gravity="center"
+                android:text="@string/at_cancel"
+                android:textColor="@color/white"
+                android:textSize="51px" />
+
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_width="0px"
+                android:layout_height="120px"
+                android:layout_marginLeft="21px"
+                android:layout_marginRight="21px"
+                android:layout_weight="1"
+                android:background="@drawable/shape_72px_5f7ee1"
+                android:gravity="center"
+                android:text="@string/at_sure1"
+                android:textColor="@color/white"
+                android:textSize="51px" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

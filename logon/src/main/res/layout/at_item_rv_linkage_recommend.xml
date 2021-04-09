@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:paddingRight="39px"
+    android:paddingLeft="39px"
+    android:layout_marginTop="42px"
+    android:layout_height="288px">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="288px"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/at_home_ld_cqzm" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="30px"
+        android:textSize="51px"
+        android:text="@string/at_morning_model"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42px"
+        android:drawablePadding="24px"
+        android:drawableLeft="@drawable/shape_3px_12px45px_fda448"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

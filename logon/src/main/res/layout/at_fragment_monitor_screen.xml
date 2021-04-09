@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_F5F5F5">
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="410px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="256px">
+
+        <ImageView
+            android:id="@+id/iv_shot"
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="125px"
+            android:src="@drawable/at_village_photograph_light" />
+
+        <ImageView
+            android:id="@+id/iv_record"
+            android:layout_width="170px"
+            android:layout_height="170px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/at_village_videotape_light" />
+
+        <ImageView
+            android:id="@+id/iv_mute"
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="125px"
+            android:src="@drawable/at_village_mute_off" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_bottom"
+        android:background="@color/black">
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/gLSurfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/img_shot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_full_screen"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="96px"
+            android:layout_marginRight="40px"
+            android:clickable="true"
+            android:src="@drawable/at_village_fullscreen" />
+
+        <TextView
+            android:id="@+id/tv_watermark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="250px"
+            android:textColor="@color/white"
+            android:textSize="36px" />
+
+        <RelativeLayout
+            android:id="@+id/viewgroup_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.aliyun.ayland.widget.ATWaveView
+                android:id="@+id/waveView"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/at_pic_loading1" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_video_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26px"
+            android:drawableLeft="@drawable/shape_circle_32px98e312_4pxffffff"
+            android:drawablePadding="32px"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="54px"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="168px"
+        android:background="@drawable/shape_0d4a4a4a_to_bf4a4a4a"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="168px"
+            android:layout_height="168px"
+            android:padding="60px"
+            android:src="@drawable/ioc_back_w" />
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_centerInParent="true"-->
+        <!--                android:gravity="center"-->
+        <!--                android:orientation="vertical">-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="东区监控"-->
+        <!--                    android:textColor="@color/white"-->
+        <!--                    android:textSize="54px" />-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginTop="8px"-->
+        <!--                    android:text="直播"-->
+        <!--                    android:textColor="@color/white"-->
+        <!--                    android:textSize="36px" />-->
+        <!--            </LinearLayout>-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_h"
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_shot_h"
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="545px"
+            android:src="@drawable/at_village_photograph_light" />
+
+        <ImageView
+            android:id="@+id/iv_record_h"
+            android:layout_width="170px"
+            android:layout_height="170px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/at_village_videotape_light" />
+
+        <ImageView
+            android:id="@+id/iv_mute_h"
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="545px"
+            android:src="@drawable/at_village_mute_off" />
+    </RelativeLayout>
+</RelativeLayout>

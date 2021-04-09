@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="165px">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="56px"
+        android:gravity="center_vertical"
+        android:textSize="45px" />
+
+    <TextView
+        android:id="@+id/tv_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2px"
+        android:layout_toRightOf="@id/tv_name"
+        android:gravity="center_vertical"
+        android:text="@string/at_choose_all_subject1"
+        android:textColor="@color/_86523C"
+        android:textSize="36px"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/cb_select"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/at_selector_checkbox"
+        android:gravity="center"
+        android:paddingRight="45px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="45px"
+        android:background="@color/_F0F0F0" />
+</RelativeLayout>

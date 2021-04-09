@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_advice_member" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"/>
+
+        <com.aliyun.ayland.widget.ATObservableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="27px"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="162px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="45px">
+
+                    <TextView
+                        android:layout_width="279px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_user_account"
+                        android:textColor="@color/_666666"
+                        android:textSize="42px" />
+
+                    <EditText
+                        android:id="@+id/et_visitor_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/at_input_user_phone"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textColor="@color/_333333"
+                        android:textColorHint="@color/_DDDDDD"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="45px"
+                    android:background="@color/_F0F0F0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="162px"
+                    android:paddingLeft="45px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_identity"
+                        android:textColor="@color/_666666"
+                        android:textSize="42px" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_identity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="279px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_householdtype102"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/at_selector_checkbox"
+                            android:drawablePadding="18px"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="@string/at_householdtype102"
+                            android:textColor="@color/_333333"
+                            android:textSize="45px" />
+
+                        <RadioButton
+                            android:id="@+id/rb_rb_householdtype104"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="69px"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/at_selector_checkbox"
+                            android:drawablePadding="18px"
+                            android:gravity="center"
+                            android:text="@string/at_householdtype104"
+                            android:textColor="@color/_333333"
+                            android:textSize="45px" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30px"
+                    android:background="@color/_F5F5F5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="162px"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="45px"
+                    android:text="@string/at_room_limit"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"/>
+
+                <Button
+                    android:id="@+id/btn_subscribe"
+                    android:layout_width="840px"
+                    android:layout_height="144px"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="120px"
+                    android:layout_marginBottom="200px"
+                    android:background="@drawable/selector_72px_ffb176fda448_efcdaaeeb67d"
+                    android:textColor="@color/white"
+                    android:text="@string/at_begin_advice"
+                    android:textSize="51px" />
+            </LinearLayout>
+        </com.aliyun.ayland.widget.ATObservableScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

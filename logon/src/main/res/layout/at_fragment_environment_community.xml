@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aliyun.ayland.widget.ATObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:text="90"
+                    android:textColor="@color/_EBB080"
+                    android:textSize="110px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="ug/m3"
+                    android:textColor="@color/_EBB080"
+                    android:textSize="60px" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:text="@string/at_pm25"
+                android:textColor="@color/_333333"
+                android:textSize="51px"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="54px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="51px"
+                    android:drawableLeft="@drawable/athome_hjshj_ico_wendu"
+                    android:gravity="center"
+                    android:text="@string/at_temp_1"
+                    android:textColor="@color/_333333"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tv_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24px"
+                    android:text="27"
+                    android:textColor="@color/_333333"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/at_temperature_unit"
+                    android:textColor="@color/_333333"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120px"
+                    android:drawableLeft="@drawable/athome_hjshj_ico_shidu"
+                    android:gravity="center"
+                    android:text="@string/at_wet"
+                    android:textColor="@color/_333333"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tv_wet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24px"
+                    android:text="40"
+                    android:textColor="@color/_333333"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/at_humidity_unit"
+                    android:textColor="@color/_333333"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="51px"
+                    android:drawableLeft="@drawable/athome_hjshj_ico_zaosheng"
+                    android:gravity="center"
+                    android:text="@string/at_noise_"
+                    android:textColor="@color/_333333"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tv_noise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8px"
+                    android:text="130dp"
+                    android:textColor="@color/_333333"
+                    android:textSize="36px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginLeft="48px"
+                android:layout_marginRight="48px"
+                android:layout_marginTop="78px"
+                android:background="@color/_EEEEEE" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55px"
+            android:paddingRight="37px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60px"
+                android:text="@string/at_line_chart"
+                android:textColor="@color/_333333"
+                android:textSize="51px" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="23px"
+                android:background="@drawable/selector_45px_f2f2f2_eeeeee"
+                android:drawableRight="@drawable/atico_xiala"
+                android:gravity="center"
+                android:paddingLeft="27px"
+                android:text="@string/at__24hour"
+                android:textColor="@color/_333333"
+                android:textSize="34px" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.aliyun.ayland.widget.ATIndexHorizontalScrollView
+                android:id="@+id/indexHorizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:fadeScrollbars="false">
+
+                <com.aliyun.ayland.widget.ATToday24HourView
+                    android:id="@+id/today24HourView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </com.aliyun.ayland.widget.ATIndexHorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tv_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/at_no_data"
+                android:textColor="@color/_999999"
+                android:textSize="38px"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.aliyun.ayland.widget.ATObservableScrollView>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_title_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/toolbar_padding_top">
+
+    <ImageView
+        android:id="@+id/status_bar"
+        style="@style/status_bar"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="142px"
+        android:layout_below="@id/status_bar">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_transparent"
+            android:drawableLeft="@drawable/ico_back"
+            android:drawablePadding="19px"
+            android:gravity="center_vertical"
+            android:paddingLeft="42px"
+            android:paddingRight="42px"
+            android:text="@string/at_back"
+            android:textColor="@color/_333333"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tv_title_name"
+            android:layout_width="520px"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/_333333"
+            android:textSize="54px" />
+
+        <RelativeLayout
+            android:id="@+id/bt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5px"
+            android:background="@drawable/selector_transparent"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:id="@+id/bt_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:maxEms="8"
+                android:maxLength="8"
+                android:singleLine="true"
+                android:text="@string/at_add"
+                android:textColor="@color/_333333"
+                android:textSize="42px" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_transparent"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="160px"
+                android:layout_height="76px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/at_common_btn_csxanniu"
+                android:gravity="center"
+                android:textColor="@color/_EBB080"
+                android:textSize="42px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_transparent"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_send1"
+                android:layout_width="wrap_content"
+                android:layout_height="76px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/at_common_btn_zhongdengxiaoanniujian"
+                android:gravity="center"
+                android:paddingLeft="14px"
+                android:paddingRight="14px"
+                android:textColor="@color/_EBB080"
+                android:textSize="42px" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ib_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/bt_right"
+            android:background="@drawable/selector_transparent"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:src="@drawable/at_nav_rizhi"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_choise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/shape_titlebar_indicator"
+                android:drawablePadding="3px"
+                android:singleLine="true"
+                android:textColor="@color/_86523C"
+                android:textSize="54px" />
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="93px"
+                android:drawableBottom="@color/transparent"
+                android:drawablePadding="9px"
+                android:singleLine="true"
+                android:textColor="@color/_666666"
+                android:textSize="54px" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/click_to_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/popup_anima"
+            android:layout_width="match_parent"
+            android:layout_height="820px"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="11px"
+            android:orientation="vertical"
+            android:background="@color/_EAEAEA">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_vehicle_passage" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="45px"
+                android:paddingBottom="99px"
+                android:paddingLeft="45px"
+                android:paddingRight="78px"
+                android:background="@drawable/shape_12px_3pxe1e1e1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="75px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textStyle="bold"
+                        android:textSize="66px" />
+
+                    <TextView
+                        android:id="@+id/tv_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="48px"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/_BBBBBB"
+                        android:textSize="36px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="102px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_license_number"
+                        android:textColor="@color/_999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_license_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_card_number"
+                        android:textColor="@color/_999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_id_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_parking_name"
+                        android:textColor="@color/_999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_car_building"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_vehicle_model"
+                        android:textColor="@color/_999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_vehicle_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_vehicle_brand"
+                        android:textColor="@color/_999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_vehicle_brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="306px"
+                        android:layout_height="wrap_content"
+                        android:text="@string/at_color"
+                        android:textColor="@color/_999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_vehicle_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="840px"
+                android:layout_height="144px"
+                android:layout_marginTop="90px"
+                android:background="@drawable/selector_72px_ffb176fda448_efcdaaeeb67d"
+                android:text="@string/at_check_my_license"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="51px" />
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_visitor_appoint"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_margin="45px"
+        android:background="@drawable/selector_18px_white_to_e0e0e0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="42px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/at_visitor_appoint"
+            android:textColor="@color/_333333"
+            android:textSize="42px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_visitor_record"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_margin="45px"
+        android:background="@drawable/selector_18px_white_to_e0e0e0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="42px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/at_visitor_record"
+            android:textColor="@color/_333333"
+            android:textSize="42px" />
+    </RelativeLayout>
+</LinearLayout>

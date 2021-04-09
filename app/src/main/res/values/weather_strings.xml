@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 天气 -->
+    <string name="weather_00">晴</string>
+    <string name="weather_01">多云</string>
+    <string name="weather_02">阴</string>
+    <string name="weather_03">阵雨</string>    
+    <string name="weather_04">雷阵雨</string>
+    <string name="weather_05">雷阵雨伴有冰雹</string>
+    <string name="weather_06">雨夹雪</string>
+    <string name="weather_07">小雨</string>
+    <string name="weather_08">中雨</string>
+    <string name="weather_09">大雨</string>
+    <string name="weather_10">暴雨</string>
+    <string name="weather_11">大暴雨</string>
+    <string name="weather_12">特大暴雨</string>
+    <string name="weather_13">阵雪</string>
+    <string name="weather_14">小雪</string>
+    <string name="weather_15">中雪</string>
+    <string name="weather_16">大雪</string>
+    <string name="weather_17">暴雪</string>
+    <string name="weather_18">雾</string>
+    <string name="weather_19">冻雨</string>
+    <string name="weather_20">沙尘暴</string>
+    <string name="weather_21">小到中雨</string>
+    <string name="weather_22">中到大雨</string>
+    <string name="weather_23">大到暴雨</string>
+    <string name="weather_24">暴雨到大暴雨</string>
+    <string name="weather_25">大暴雨到特大暴雨</string>
+    <string name="weather_26">小到中雪</string>   
+    <string name="weather_27">中到大雪</string>
+    <string name="weather_28">大到暴雪</string>
+    <string name="weather_29">浮尘</string>
+    <string name="weather_30">扬沙</string>
+    <string name="weather_31">强沙尘暴</string>
+    <string name="weather_32">浓雾</string>
+    <string name="weather_49">强浓雾</string>
+    <string name="weather_53">霾</string>
+    <string name="weather_54">中度霾</string>
+    <string name="weather_55">重度霾</string>
+    <string name="weather_56">严重霾</string>
+    <string name="weather_57">大雾</string>
+    <string name="weather_58">特强浓雾</string>
+    <string name="weather_301">雨</string>
+    <string name="weather_302">雪</string>
+
+    <!-- 风向 -->
+    <string name="no_wind">无持续风向</string>
+    <string name="northeast">东北风</string>
+    <string name="east">东风</string>
+    <string name="southeast">东南风</string>
+    <string name="south">南风</string>
+    <string name="southwest">西南风</string>
+    <string name="west">西风</string>
+    <string name="northwest">西北风</string>
+    <string name="north">北风</string>
+    <string name="whirl_wind">旋风</string>
+
+    <!-- 风力 -->
+    <string name="wind_level_0">微风</string>
+    <string name="wind_level_1">3-4级</string>
+    <string name="wind_level_2">4-5级</string>
+    <string name="wind_level_3">5-6级</string>
+    <string name="wind_level_4">6-7级</string>
+    <string name="wind_level_5">7-8级</string>
+    <string name="wind_level_6">8-9级</string>
+    <string name="wind_level_7">9-10级</string>
+    <string name="wind_level_8">10-11级</string>
+    <string name="wind_level_9">11-12级</string>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<include layout="@layout/deviceadd_view_top_bar" />-->
+
+        <com.aliyun.iot.link.ui.component.RefreshRecycleViewLayout
+            android:id="@+id/deviceadd_product_list_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/_F6F6F6" />
+
+    </LinearLayout>
+
+    <com.aliyun.iot.link.ui.component.simpleLoadview.LinkSimpleLoadView
+        android:id="@+id/deviceadd_product_list_link_simple_load_view"
+        style="@style/SimpleLoadViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

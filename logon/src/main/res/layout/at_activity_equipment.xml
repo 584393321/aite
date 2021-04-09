@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/_E6E2DF"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/at_bg_shebei"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+            android:id="@+id/titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bartext="@string/at_equipment"
+            app:show_ib="true"
+            app:title_color_drawable="@color/transparent"
+            app:titlebar_background="@color/transparent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/smartRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srlAccentColor="@android:color/white"
+                app:srlPrimaryColor="#444444">
+
+                <com.scwang.smartrefresh.header.MaterialHeader
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_equipment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="39px"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="220px"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/at_pic_kongkongruye" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24px"
+                            android:text="@string/at_have_no_device_"
+                            android:textColor="@color/_999999"
+                            android:textSize="39px" />
+
+                        <TextView
+                            android:id="@+id/tv_add_device"
+                            android:layout_width="480px"
+                            android:layout_height="132px"
+                            android:layout_marginTop="24px"
+                            android:background="@drawable/selector_66px_bbbbbbffffff_e6e6e6"
+                            android:gravity="center"
+                            android:text="@string/at_add_device"
+                            android:textColor="@color/_666666"
+                            android:textSize="51px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

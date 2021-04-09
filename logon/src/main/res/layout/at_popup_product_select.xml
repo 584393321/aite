@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/popup_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/at_list_tanchuang"
+        android:layout_marginRight="42px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_synthesize"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:paddingLeft="45px"
+            android:layout_marginTop="30px"
+            android:gravity="center_vertical"
+            android:text="@string/at_synthesize"
+            android:textColor="@color/white"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_descending"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:paddingLeft="45px"
+            android:gravity="center_vertical"
+            android:text="@string/at_price_descending"
+            android:textColor="@color/white"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_ascending"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:paddingLeft="45px"
+            android:gravity="center_vertical"
+            android:text="@string/at_price_ascending"
+            android:textColor="@color/white"
+            android:textSize="45px" />
+    </LinearLayout>
+</RelativeLayout>

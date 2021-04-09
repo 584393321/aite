@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_12px_3pxeeeeee_fdfdfd"
+    android:paddingLeft="45px"
+    android:paddingRight="24px"
+    android:layout_marginBottom="30px">
+
+    <TextView
+        android:id="@+id/tv_change"
+        android:layout_width="123px"
+        android:layout_height="210px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/at_change"
+        android:gravity="center"
+        android:textColor="@color/_86523C"
+        android:textSize="45px" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/tv_change"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_house_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_666666"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12px"
+            android:textColor="@color/_999999"
+            android:textSize="36px" />
+    </LinearLayout>
+</RelativeLayout>

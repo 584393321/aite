@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_member_entry" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="27px"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="168px"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="42px">
+
+                <TextView
+                    android:layout_width="282px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/at_name"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/at_input_name"
+                    android:maxLength="11"
+                    android:textColor="@color/_333333"
+                    android:textColorHint="@color/_CCCCCC"
+                    android:textSize="45px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginLeft="45px"
+                android:background="@color/_F0F0F0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="162px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="45px">
+
+                <TextView
+                    android:layout_width="279px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/at_gender"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_visitor_gender"
+                        android:layout_width="621px"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/at_select_sex"
+                        android:textColor="@color/_333333"
+                        android:textColorHint="@color/_DDDDDD"
+                        android:textSize="45px" />
+
+                    <ImageView
+                        android:layout_width="90px"
+                        android:layout_height="90px"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="45px"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/atico_junp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginLeft="45px"
+                android:background="@color/_F0F0F0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="162px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="45px">
+
+                <TextView
+                    android:layout_width="279px"
+                    android:layout_height="wrap_content"
+                    android:text="@string/at_birth_date"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_birth_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_visitor_birth_date"
+                        android:layout_width="621px"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_centerVertical="true"
+                        android:hint="@string/at_choose_birth_date"
+                        android:inputType="number"
+                        android:textColor="@color/_333333"
+                        android:textColorHint="@color/_DDDDDD"
+                        android:textSize="45px" />
+
+                    <ImageView
+                        android:layout_width="90px"
+                        android:layout_height="90px"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="45px"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/atico_junp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30px"
+                android:background="@color/_F5F5F5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="162px"
+                android:paddingLeft="45px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/at_identity"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <RadioGroup
+                    android:id="@+id/rg_identity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="279px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_householdtype102"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/at_selector_checkbox"
+                        android:drawablePadding="18px"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="@string/at_householdtype102"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <RadioButton
+                        android:id="@+id/rb_rb_householdtype104"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="69px"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/at_selector_checkbox"
+                        android:drawablePadding="18px"
+                        android:gravity="center"
+                        android:text="@string/at_householdtype104"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_management_face"
+                android:layout_width="match_parent"
+                android:layout_height="30px"
+                android:visibility="gone"
+                android:background="@color/_F5F5F5" />
+
+            <TextView
+                android:id="@+id/tv_management_face"
+                android:layout_width="match_parent"
+                android:layout_height="162px"
+                android:background="@drawable/selector_white"
+                android:paddingLeft="45px"
+                android:paddingRight="45px"
+                android:drawableRight="@drawable/atico_junp"
+                android:gravity="center_vertical"
+                android:text="管理人脸权限"
+                android:textColor="@color/_666666"
+                android:visibility="gone"
+                android:textSize="42px"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginLeft="45px"
+                android:background="@color/_F0F0F0" />
+
+            <Button
+                android:id="@+id/btn_next_face"
+                android:layout_width="840px"
+                android:layout_height="144px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="120px"
+                android:background="@drawable/selector_72px_ffb176fda448_efcdaaeeb67d"
+                android:textColor="@color/white"
+                android:textSize="51px" />
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="990px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="48px"
+                android:text="通过此方式添加的成员，无法登录app，但只可享受app部分人脸功能，如：人脸识别进出小区、老幼关怀等。若希望体验app，请通过物业登记后注册使用。"
+                android:textColor="@color/_999999"
+                android:textSize="36px" />
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

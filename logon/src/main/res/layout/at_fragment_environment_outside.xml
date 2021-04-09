@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aliyun.ayland.widget.ATObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75px"
+                    android:text="23"
+                    android:textColor="@color/_444444"
+                    android:textSize="120px" />
+
+                <TextView
+                    android:id="@+id/tv_temp_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_temp"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="18px"
+                    android:text="℃"
+                    android:textColor="@color/_444444"
+                    android:textSize="60px" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3px"
+                android:paddingLeft="48px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_begin"
+                    android:layout_width="102px"
+                    android:layout_height="102px"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_to"
+                    android:layout_width="63px"
+                    android:layout_height="63px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/at_ic_s_tianqi_guodu"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_end"
+                    android:layout_width="102px"
+                    android:layout_height="102px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/at_weather_17" />
+
+                <TextView
+                    android:id="@+id/tv_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:layout_marginTop="18px"
+                    android:text="多云"
+                    android:textColor="@color/_333333"
+                    android:textSize="60px" />
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45px"
+                    android:drawableLeft="@drawable/at_home_ico_dingwei"
+                    android:drawablePadding="2px"
+                    android:layout_marginTop="39px"
+                    android:gravity="center"
+                    android:text="上海"
+                    android:textColor="@color/_333333"
+                    android:textSize="36px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45px"
+                    android:drawableLeft="@drawable/athome_hjshj_ico_shidu"
+                    android:gravity="center"
+                    android:text="@string/at_wet"
+                    android:textColor="@color/_666666"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tv_wet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15px"
+                    android:text="27%"
+                    android:textColor="@color/_666666"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="72px"
+                    android:drawableLeft="@drawable/athome_hjshj_ico_pm"
+                    android:gravity="center"
+                    android:text="@string/at_pm"
+                    android:textColor="@color/_666666"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tv_pm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15px"
+                    android:text="40ug/m3"
+                    android:textColor="@color/_666666"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="72px"
+                    android:drawableLeft="@drawable/athome_hjshj_ico_zaosheng"
+                    android:gravity="center"
+                    android:text="@string/at_noise_"
+                    android:textColor="@color/_666666"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tv_noise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15px"
+                    android:text="130dB"
+                    android:textColor="@color/_666666"
+                    android:textSize="36px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45px"
+                    android:drawableLeft="@drawable/athome_hjshj_ico_kongqizhiliang"
+                    android:gravity="center"
+                    android:text="@string/at_air_quality_"
+                    android:textColor="@color/_666666"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tv_air_quality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15px"
+                    android:text="良"
+                    android:textColor="@color/_666666"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="72px"
+                    android:drawableLeft="@drawable/athome_hjshj_ico_fengli"
+                    android:gravity="center"
+                    android:text="@string/at_wind"
+                    android:textColor="@color/_666666"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:id="@+id/tv_wind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15px"
+                    android:text="微风"
+                    android:textColor="@color/_666666"
+                    android:textSize="36px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="72px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55px"
+                    android:text="@string/at_tips_"
+                    android:textColor="@color/_F15E5E"
+                    android:textSize="39px" />
+
+                <TextView
+                    android:id="@+id/tv_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10px"
+                    android:text="空气好，可以外出活动，除极少数对污染物特别敏感的"
+                    android:textColor="@color/_E85D3E"
+                    android:textSize="36px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_margin="60px"
+                android:background="@color/_F0F0F0" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="75px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="@string/at_line_chart"
+                android:textColor="@color/_333333"
+                android:textSize="54px" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_45px_f2f2f2_eeeeee"
+                android:drawableRight="@drawable/at_bt_s_yxjs_xiala"
+                android:gravity="center"
+                android:paddingLeft="24px"
+                android:text="@string/at__24hour"
+                android:textColor="@color/_333333"
+                android:textSize="36px" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.aliyun.ayland.widget.ATIndexHorizontalScrollView
+                android:id="@+id/indexHorizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15px"
+                android:fadeScrollbars="false">
+
+                <com.aliyun.ayland.widget.ATToday24HourView
+                    android:id="@+id/today24HourView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.aliyun.ayland.widget.ATIndexHorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tv_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/at_no_data"
+                android:textColor="@color/_999999"
+                android:textSize="38px"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.aliyun.ayland.widget.ATObservableScrollView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_report" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/_EEEEEE" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="327px"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="@string/at_report_reason"
+        android:maxLength="140"
+        android:paddingBottom="52px"
+        android:paddingLeft="42px"
+        android:paddingRight="42px"
+        android:paddingTop="52px"
+        android:textColor="@color/_333333"
+        android:textColorHint="@color/_999999"
+        android:textSize="45px" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:paddingLeft="42px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="42px"
+        android:background="@color/_EEEEEE" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="426px"
+        android:layout_height="132px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="187px"
+        android:background="@drawable/selector_66px_fcd6abf8e8c1_f7de92f9b49c"
+        android:gravity="center"
+        android:text="@string/at_sure1"
+        android:textColor="@color/white"
+        android:textSize="51px" />
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/_F5F5F5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_one"
+            android:layout_width="match_parent"
+            android:layout_height="168px"
+            android:layout_marginTop="20px"
+            android:background="@color/white"
+            android:paddingLeft="42px">
+
+            <TextView
+                android:id="@+id/tv_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="48px"
+                android:button="@drawable/at_selector_checkbox"
+                android:clickable="false" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="42px"
+            android:background="@color/_EEEEEE" />
+
+        <RelativeLayout
+            android:id="@+id/rl_two"
+            android:layout_width="match_parent"
+            android:layout_height="168px"
+            android:background="@color/white"
+            android:paddingLeft="42px">
+
+            <TextView
+                android:id="@+id/tv_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="48px"
+                android:button="@drawable/at_selector_checkbox"
+                android:clickable="false" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="850px"
+    android:layout_height="448px"
+    android:layout_marginBottom="22px"
+    android:layout_marginLeft="48px"
+    android:background="@drawable/selector_12px_ffffff_e6e6e6"
+    android:clickable="true"
+    android:elevation="20px"
+    android:orientation="vertical"
+    android:paddingLeft="45px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="136px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:background="@drawable/shape_6pxd54647"
+            android:layout_width="12px"
+            android:layout_height="42px" />
+
+        <TextView
+            android:id="@+id/tv_appoint_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="57px"
+            android:textColor="@color/_999999"
+            android:textSize="36px" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1px"
+        android:text="已预约"
+        android:textColor="@color/_333333"
+        android:textSize="50px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:text="@string/at_address_"
+            android:textColor="@color/_999999"
+            android:textSize="38px" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_666666"
+            android:textSize="38px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:text="@string/at_plan_"
+            android:textColor="@color/_999999"
+            android:textSize="38px" />
+
+        <TextView
+            android:id="@+id/tv_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_666666"
+            android:textSize="38px" />
+    </LinearLayout>
+</LinearLayout>

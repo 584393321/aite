@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_setting" />
+
+    <TextView
+        android:id="@+id/tv_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="162px"
+        android:layout_marginTop="27px"
+        android:gravity="center_vertical"
+        android:paddingLeft="45px"
+        android:paddingRight="45px"
+        android:text="@string/at_change_password"
+        android:background="@drawable/bt_open_curtain_selector"
+        android:textColor="@color/_333333"
+        android:drawableRight="@drawable/atico_junp"
+        android:textSize="45px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45px"
+        android:layout_height="3px"
+        android:background="@color/_F0F0F0" />
+
+    <TextView
+        android:id="@+id/tv_tmall"
+        android:layout_width="match_parent"
+        android:layout_height="162px"
+        android:gravity="center_vertical"
+        android:paddingLeft="45px"
+        android:paddingRight="45px"
+        android:text="@string/at_tmall_wizard_authorization"
+        android:background="@drawable/bt_open_curtain_selector"
+        android:textColor="@color/_333333"
+        android:drawableRight="@drawable/atico_junp"
+        android:textSize="45px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45px"
+        android:layout_height="3px"
+        android:background="@color/_F0F0F0" />
+
+    <RelativeLayout
+        android:id="@+id/rl_storage"
+        android:layout_width="match_parent"
+        android:layout_height="162px"
+        android:background="@drawable/bt_open_curtain_selector"
+        android:paddingLeft="45px"
+        android:paddingRight="45px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/at_clear_cache"
+            android:textColor="@color/_333333"
+            android:textSize="45px" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/atico_junp" />
+
+        <TextView
+            android:id="@+id/tv_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/imageView"
+            android:textColor="@color/_999999"
+            android:textSize="42px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="45px"
+        android:layout_height="3px"
+        android:background="@color/_F0F0F0" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="840px"
+        android:layout_height="144px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="180px"
+        android:background="@drawable/selector_72px_f57066e9575b_to_ffb9b4ea9296"
+        android:text="@string/at_logout"
+        android:textColor="@color/white"
+        android:textSize="51px" />
+</LinearLayout>

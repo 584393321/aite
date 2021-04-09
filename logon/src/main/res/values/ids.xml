@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_tag_autolayout_size" type="id"/>
+    <item name="id_tag_autolayout_padding" type="id"/>
+    <item name="id_tag_autolayout_margin" type="id"/>
+
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="monitor_titles">
+        <item>监控画面</item>
+        <item>保存记录</item>
+        <item>监控记录</item>
+    </string-array>
+    <string-array name="tab_face_manage">
+        <item>小区审核</item>
+        <item>使用记录</item>
+    </string-array>
+    <string-array name="tab_discover_device_titles">
+        <item>云端设备</item>
+        <item>本地设备</item>
+    </string-array>
+    <string-array name="tagKey">
+        <item>TRIGGER</item>
+        <item>CONDITION</item>
+        <item>ACTION</item>
+    </string-array>
+</resources>

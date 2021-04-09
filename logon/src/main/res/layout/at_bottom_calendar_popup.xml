@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_66333333">
+
+    <RelativeLayout
+        android:id="@+id/click_to_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/popup_anima"
+            android:layout_width="match_parent"
+            android:layout_height="1212px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_top_45pxffffff"
+            android:orientation="vertical">
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mcv_selectionColor="@color/_F9B49C" />
+
+            <LinearLayout
+                android:id="@+id/ll_close"
+                android:layout_width="174px"
+                android:layout_height="144px"
+                android:background="@drawable/shape_top_45pxffffff"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/at_btn_guanbi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_right"
+                android:layout_width="wrap_content"
+                android:layout_height="144px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_top_45pxffffff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="72px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/at_common_btn_csxanniu"
+                    android:gravity="center"
+                    android:paddingLeft="30px"
+                    android:paddingRight="30px"
+                    android:text="@string/at_sure"
+                    android:textColor="@color/_EBB080"
+                    android:textSize="42px" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

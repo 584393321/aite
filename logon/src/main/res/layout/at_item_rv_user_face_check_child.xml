@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="168px">
+
+    <LinearLayout
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/shape_circle_12px_fda448"
+            android:gravity="center_vertical"
+            android:drawablePadding="15px"
+            android:textColor="@color/_666666"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tv_device_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3px"
+            android:layout_marginLeft="27px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/_999999"
+            android:textSize="33px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45px"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_face_status"
+            android:layout_width="240px"
+            android:layout_height="102px"
+            android:gravity="center"
+            android:background="@drawable/shape_51px_f2f2f2"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tv_face_status_failed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/at_fail_to_apply"
+            android:visibility="gone"
+            android:textColor="@color/_F15E5E"
+            android:textSize="30px" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:background="@color/white1"
+        android:layout_height="wrap_content" />
+
+    <com.aliyun.ayland.widget.magicindicator.ATMagicIndicator
+        android:id="@+id/magicIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/white1"
+        android:fillViewport="false" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:id="@+id/srl_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_handing"
+            android:layout_width="wrap_content"
+            android:layout_height="161px"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:text="@string/at_sf_is_handing"
+            android:textColor="@color/_333333"
+            android:textSize="48px"
+            android:textStyle="bold" />
+
+        <com.aliyun.ayland.widget.ATCustomViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/_F5F5F5" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

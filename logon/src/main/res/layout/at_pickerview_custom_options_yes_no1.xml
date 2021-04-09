@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="#F6F6F6">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_centerVertical="true"
+            android:text="@string/at_cancel"
+            android:textColor="#0F8AE8"
+            android:textSize="47px" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/at_sure1"
+            android:textColor="#0F8AE8"
+            android:textSize="47px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/optionspicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <com.aliyun.ayland.widget.contrarywind.view.WheelView
+            android:id="@+id/options1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.aliyun.ayland.widget.contrarywind.view.WheelView
+            android:id="@+id/options2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.aliyun.ayland.widget.contrarywind.view.WheelView
+            android:id="@+id/options3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

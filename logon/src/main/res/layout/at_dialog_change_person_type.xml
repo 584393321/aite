@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="816px"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/selector_30px_ffffff_e6e6e6">
+
+        <TextView
+            android:layout_marginTop="90px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60px"
+            android:textColor="@color/_333333"
+            android:textStyle="bold"
+            android:text="切换成员身份为"/>
+
+        <TextView
+            android:id="@+id/tv_member"
+            android:layout_width="642px"
+            android:layout_height="162px"
+            android:layout_marginTop="120px"
+            android:background="@drawable/shape_12pxeeeeee_ffffff"
+            android:gravity="center"
+            android:text="@string/at_householdtype102"
+            android:textColor="@color/_666666"
+            android:textSize="51px" />
+
+        <TextView
+            android:id="@+id/tv_renter"
+            android:layout_width="642px"
+            android:layout_height="162px"
+            android:layout_marginTop="54px"
+            android:layout_marginBottom="96px"
+            android:background="@drawable/shape_12pxeeeeee_ffffff"
+            android:gravity="center"
+            android:text="@string/at_householdtype104"
+            android:textColor="@color/_666666"
+            android:textSize="51px" />
+    </LinearLayout>
+</RelativeLayout>

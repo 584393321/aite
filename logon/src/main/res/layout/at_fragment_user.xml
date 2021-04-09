@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_E6E2DF">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/atbg_wode" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="213px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.aliyun.ayland.widget.ATMyCircleImageView
+            android:id="@+id/img_user"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@drawable/atpho_s_mine_touxiang"/>
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27px"
+            android:textColor="@color/_824A11"
+            android:textSize="66px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18px"
+            android:layout_marginRight="18px"
+            android:layout_marginTop="108px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_message_center"
+                android:layout_width="0dp"
+                android:layout_height="288px"
+                android:layout_marginLeft="21px"
+                android:layout_marginRight="21px"
+                android:layout_marginBottom="10px"
+                android:layout_weight="1"
+                android:background="@drawable/selector_18px_fafaf9_eeeeee"
+                android:drawableLeft="@drawable/aticon_s_xiaoxizhongxin"
+                android:drawablePadding="48px"
+                android:elevation="10px"
+                android:gravity="center_vertical"
+                android:paddingLeft="45px"
+                android:text="@string/at_message_center"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <TextView
+                android:id="@+id/tv_switch_room"
+                android:layout_width="0dp"
+                android:layout_height="288px"
+                android:layout_marginLeft="21px"
+                android:layout_marginRight="21px"
+                android:layout_marginBottom="10px"
+                android:layout_weight="1"
+                android:background="@drawable/selector_18px_fafaf9_eeeeee"
+                android:drawableLeft="@drawable/aticon_s_qiehuanfangjian"
+                android:drawablePadding="48px"
+                android:elevation="10px"
+                android:gravity="center_vertical"
+                android:paddingLeft="45px"
+                android:text="@string/at_switch_room"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18px"
+            android:layout_marginRight="18px"
+            android:layout_marginTop="35px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_family_manage"
+                android:layout_width="0dp"
+                android:layout_height="288px"
+                android:layout_marginLeft="21px"
+                android:layout_marginRight="21px"
+                android:layout_marginBottom="10px"
+                android:layout_weight="1"
+                android:background="@drawable/selector_18px_fafaf9_eeeeee"
+                android:drawableLeft="@drawable/aticon_s_jiatingguanli_a"
+                android:drawablePadding="48px"
+                android:elevation="10px"
+                android:gravity="center_vertical"
+                android:paddingLeft="45px"
+                android:text="@string/at_family_manage"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <TextView
+                android:id="@+id/tv_setting"
+                android:layout_width="0dp"
+                android:layout_height="288px"
+                android:layout_marginLeft="21px"
+                android:layout_marginRight="21px"
+                android:layout_marginBottom="10px"
+                android:layout_weight="1"
+                android:background="@drawable/selector_18px_fafaf9_eeeeee"
+                android:drawableLeft="@drawable/aticon_s_shezhi"
+                android:drawablePadding="93px"
+                android:elevation="10px"
+                android:gravity="center_vertical"
+                android:paddingLeft="45px"
+                android:text="@string/at_setting"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18px"
+            android:layout_marginRight="18px"
+            android:layout_marginTop="35px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_feed_back"
+                android:layout_width="0dp"
+                android:layout_height="288px"
+                android:layout_marginLeft="21px"
+                android:layout_marginRight="21px"
+                android:layout_marginBottom="10px"
+                android:layout_weight="1"
+                android:background="@drawable/selector_18px_fafaf9_eeeeee"
+                android:drawableLeft="@drawable/aticon_s_yijianfankui"
+                android:drawablePadding="48px"
+                android:elevation="10px"
+                android:gravity="center_vertical"
+                android:paddingLeft="45px"
+                android:text="@string/at_feed_back"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="0dp"
+                android:layout_height="288px"
+                android:layout_marginLeft="21px"
+                android:layout_marginRight="21px"
+                android:layout_marginBottom="10px"
+                android:layout_weight="1"
+                android:background="@drawable/selector_18px_fafaf9_eeeeee"
+                android:drawableLeft="@drawable/aticon_s_guanyu"
+                android:drawablePadding="93px"
+                android:elevation="10px"
+                android:gravity="center_vertical"
+                android:paddingLeft="45px"
+                android:text="@string/at_about"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

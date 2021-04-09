@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_add_condition" />
+
+    <LinearLayout
+        android:id="@+id/ll_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36px"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_manual"
+            android:layout_width="match_parent"
+            android:layout_height="168px"
+            android:background="@drawable/selector_white"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="45px"
+            android:text="@string/at_manual_trigger"
+            android:textColor="@color/_333333"
+            android:textSize="45px"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="45px"
+            android:layout_height="1px"
+            android:background="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_timing"
+            android:layout_width="match_parent"
+            android:layout_height="162px"
+            android:layout_marginLeft="39px"
+            android:layout_marginRight="39px"
+            android:background="@drawable/selector_12px_f5f5f5_eeeeee">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="@string/at_timing"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:src="@drawable/atico_junp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_device"
+            android:layout_width="match_parent"
+            android:layout_height="162px"
+            android:layout_marginLeft="39px"
+            android:layout_marginRight="39px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/selector_12px_f5f5f5_eeeeee">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="@string/at_equipment"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:src="@drawable/atico_junp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_trigger"
+        android:layout_width="match_parent"
+        android:layout_marginTop="36px"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_person_access"
+            android:layout_width="match_parent"
+            android:layout_height="162px"
+            android:layout_marginLeft="39px"
+            android:layout_marginRight="39px"
+            android:background="@drawable/selector_12px_f5f5f5_eeeeee">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="@string/at_person_access"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:src="@drawable/atico_junp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_vehicle_access"
+            android:layout_width="match_parent"
+            android:layout_height="162px"
+            android:layout_marginLeft="39px"
+            android:layout_marginRight="39px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/selector_12px_f5f5f5_eeeeee">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="@string/at_vehicle_access"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:src="@drawable/atico_junp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="36px"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_send_device_message"
+            android:layout_width="match_parent"
+            android:layout_height="162px"
+            android:layout_marginLeft="39px"
+            android:layout_marginRight="39px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/selector_12px_f5f5f5_eeeeee">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="@string/at_send_device_message"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:src="@drawable/atico_junp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_send_app_message"
+            android:layout_width="match_parent"
+            android:layout_height="162px"
+            android:layout_marginLeft="39px"
+            android:layout_marginRight="39px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/selector_12px_f5f5f5_eeeeee">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="@string/at_send_app_message"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:src="@drawable/atico_junp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_change_device_status"
+            android:layout_width="match_parent"
+            android:layout_height="162px"
+            android:layout_marginLeft="39px"
+            android:layout_marginRight="39px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/selector_12px_f5f5f5_eeeeee">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="@string/at_change_device_status"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:src="@drawable/atico_junp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_perform_scene"
+            android:layout_width="match_parent"
+            android:layout_height="162px"
+            android:layout_marginLeft="39px"
+            android:layout_marginRight="39px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/selector_12px_f5f5f5_eeeeee">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"
+                android:text="@string/at_perform_scene"
+                android:textColor="@color/_333333"
+                android:textSize="45px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:src="@drawable/atico_junp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

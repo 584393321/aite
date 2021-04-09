@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/click_to_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000">
+
+        <LinearLayout
+            android:id="@+id/popup_anima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_take_picture"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="@string/at_camera"
+                android:textColor="@color/_505050"
+                android:textSize="56px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/_EEEEEE" />
+
+            <TextView
+                android:id="@+id/tv_my_photo"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:gravity="center"
+                android:text="@string/at_select_from_the_phone_album"
+                android:background="@color/white"
+                android:textColor="@color/_505050"
+                android:textSize="56px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/_EEEEEE" />
+
+            <TextView
+                android:id="@+id/tv_save_picture"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="@string/at_save_the_picture"
+                android:textColor="@color/_505050"
+                android:textSize="56px" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20px"
+                android:layout_height="160px"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/at_cancel"
+                android:textColor="@color/_505050"
+                android:textSize="56px" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

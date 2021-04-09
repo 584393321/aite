@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="39px"
+    android:layout_marginRight="39px"
+    android:layout_marginTop="30px"
+    android:layout_height="240px"
+    android:background="@drawable/shape_12pxffffff">
+
+    <ImageView
+        android:id="@+id/img_device"
+        android:layout_width="132px"
+        android:layout_height="132px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="192px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_333333"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_product_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13px"
+            android:textColor="@color/_999999"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="45px"
+        android:src="@drawable/at_home_btn_tjbdsb" />
+</RelativeLayout>

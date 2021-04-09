@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_appoint_result"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_off_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48px"
+        android:background="@color/_F5F5F5">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="768px"
+            android:scaleType="fitXY"
+            android:layout_height="768px" />
+
+        <ImageView
+            android:id="@+id/img_off_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="117px"
+            android:src="@drawable/at_hsh_pic_tpjzsb"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_off_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="525px"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="10px"
+            android:text="@string/at_device_off_line_click_to_try_again"
+            android:textColor="@color/_999999"
+            android:textSize="39px"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="访客可使用二维码开门（截图有效，过期失效）"
+        android:layout_marginTop="24px"
+        android:textSize="36px"
+        android:textColor="@color/_666666" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39px"
+        android:layout_marginRight="39px"
+        android:layout_marginTop="60px"
+        android:background="@drawable/shape_18px_f5f5f5"
+        android:orientation="vertical"
+        android:paddingBottom="75px"
+        android:paddingLeft="45px"
+        android:paddingRight="45px">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="42px"
+            android:textColor="@color/_333333"
+            android:textSize="72px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45px"
+            android:textColor="@color/_666666"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_visite_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:textColor="@color/_666666"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_visite_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:textColor="@color/_666666"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_leave_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:textColor="@color/_666666"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_plate_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:textColor="@color/_666666"
+            android:textSize="45px"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_http"
+        android:layout_width="match_parent"
+        android:layout_marginTop="21px"
+        android:paddingRight="45px"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/atico_junp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="试用人脸识别开门"
+            android:layout_marginRight="60px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/_86523C"
+            android:textSize="42px" />
+    </RelativeLayout>
+</LinearLayout>

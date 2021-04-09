@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@color/_333333"
+        app:srlPrimaryColor="@color/white">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_family_monitor"
+                android:layout_width="990px"
+                android:layout_height="360px"
+                android:layout_marginTop="45px"
+                android:layout_marginLeft="48px"
+                android:background="@drawable/atpic_jtaf_a">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36px"
+                    android:layout_marginTop="48px"
+                    android:drawablePadding="12px"
+                    android:text="@string/at_family_monitor"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/shape_3px_12px45px_fda448"
+                    android:textColor="@color/white"
+                    android:textSize="60px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="66px"
+                    android:layout_marginTop="180px"
+                    android:text="@string/at_devices_number"
+                    android:textColor="@color/white"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/tv_equipment_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="273px"
+                    android:layout_marginTop="168px"
+                    android:textColor="@color/white"
+                    android:textSize="45px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="411px"
+                    android:layout_marginTop="180px"
+                    android:text="@string/at_oline_number"
+                    android:textColor="@color/white"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/tv_online_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="564px"
+                    android:layout_marginTop="168px"
+                    android:textColor="@color/white"
+                    android:textSize="45px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sensor_security"
+                android:layout_width="990px"
+                android:layout_height="360px"
+                android:layout_marginTop="42px"
+                android:layout_marginLeft="48px"
+                android:background="@drawable/atpic_jtaf_b">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36px"
+                    android:layout_marginTop="48px"
+                    android:drawablePadding="12px"
+                    android:text="@string/at_sensor_security"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/shape_3px_12px45px_fda448"
+                    android:textColor="@color/white"
+                    android:textSize="60px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="66px"
+                    android:layout_marginTop="180px"
+                    android:text="@string/at_devices_number"
+                    android:textColor="@color/white"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/tv_monitoring_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="273px"
+                    android:layout_marginTop="168px"
+                    android:textColor="@color/white"
+                    android:textSize="45px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="411px"
+                    android:layout_marginTop="180px"
+                    android:text="@string/at_sensor_type"
+                    android:textColor="@color/white"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/tv_monitoring_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="645px"
+                    android:layout_marginTop="168px"
+                    android:textColor="@color/white"
+                    android:textSize="45px" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="66px"
+                    android:layout_marginTop="258px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_lock_security"
+                android:layout_width="990px"
+                android:layout_height="360px"
+                android:layout_marginTop="42px"
+                android:layout_marginLeft="48px"
+                android:background="@drawable/atpic_jtaf_c">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36px"
+                    android:layout_marginTop="48px"
+                    android:drawablePadding="12px"
+                    android:text="@string/at_lock_security"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/shape_3px_12px45px_fda448"
+                    android:textColor="@color/white"
+                    android:textSize="60px" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

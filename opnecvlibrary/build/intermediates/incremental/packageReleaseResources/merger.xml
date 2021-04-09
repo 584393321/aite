@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="D:\project\customer\longguang\logon\opnecvlibrary\src\main\res"/><source path="D:\project\customer\longguang\logon\opnecvlibrary\build\generated\res\rs\release"/><source path="D:\project\customer\longguang\logon\opnecvlibrary\build\generated\res\resValues\release"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="D:\project\customer\longguang\logon\opnecvlibrary\src\main\res"><file name="haarcascade_eye" path="D:\project\customer\longguang\logon\opnecvlibrary\src\main\res\raw\haarcascade_eye.xml" qualifiers="" type="raw"/><file name="lbpcascade_frontalface" path="D:\project\customer\longguang\logon\opnecvlibrary\src\main\res\raw\lbpcascade_frontalface.xml" qualifiers="" type="raw"/><file path="D:\project\customer\longguang\logon\opnecvlibrary\src\main\res\values\attrs.xml" qualifiers=""><declare-styleable name="CameraBridgeViewBase">
+       <attr format="boolean" name="show_fps"/>
+       <attr format="integer" name="camera_id">
+          <enum name="any" value="-1"/>
+          <enum name="back" value="99"/>
+          <enum name="front" value="98"/>
+       </attr>
+    </declare-styleable></file><file path="D:\project\customer\longguang\logon\opnecvlibrary\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">OpneCVLibrary</string><string name="no_camera_permission_message">请开启摄像头权限，然后重试</string></file></source><source path="D:\project\customer\longguang\logon\opnecvlibrary\build\generated\res\rs\release"/><source path="D:\project\customer\longguang\logon\opnecvlibrary\build\generated\res\resValues\release"/></dataSet><dataSet config="release$Generated" generated="true"><source path="D:\project\customer\longguang\logon\opnecvlibrary\src\release\res"/></dataSet><dataSet config="release" generated-set="release$Generated"><source path="D:\project\customer\longguang\logon\opnecvlibrary\src\release\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="CameraBridgeViewBase"><attr format="boolean" name="show_fps"/><attr format="integer" name="camera_id">
+          <enum name="any" value="-1"/>
+          <enum name="back" value="99"/>
+          <enum name="front" value="98"/>
+       </attr></declare-styleable></configuration></mergedItems></merger>

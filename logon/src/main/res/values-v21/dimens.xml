@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="toolbar_height">228px</dimen>
+    <dimen name="toolbar_padding_top">72px</dimen>
+    <dimen name="toolbar_padding_top1">50dp</dimen>
+    <dimen name="mainpage_scene_recyclerview_size">550px</dimen>
+    <dimen name="mainpage_scene_padding">243px</dimen>
+</resources>

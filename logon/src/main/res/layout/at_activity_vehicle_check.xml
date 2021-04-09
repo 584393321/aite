@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_F5F5F5"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_vehicle_check" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="168px"
+        android:background="@color/white"
+        android:paddingLeft="45px"
+        android:paddingRight="45px">
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_45px_f1f1f1_eeeeee">
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:src="@drawable/at_common_ico_shousuo" />
+
+            <EditText
+                android:id="@+id/et_search_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/img_search"
+                android:background="@null"
+                android:hint="@string/at_search_park"
+                android:textColor="@color/_162136"
+                android:textColorHint="@color/_A5ACB8"
+                android:textSize="48px"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_search"
+                android:text="@string/at_search_park"
+                android:textColor="@color/_A5ACB8"
+                android:textSize="48px" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:text="@string/at_cancel"
+                android:textColor="@color/_A5ACB8"
+                android:textSize="48px"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@android:color/white"
+        app:srlPrimaryColor="#444444">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/srl_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/_F5F5F5"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36px" />
+
+            <LinearLayout
+                android:id="@+id/ll_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="339px"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/at_pic_kongkongruye" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:text="@string/at_have_no_car_"
+                    android:textColor="@color/_999999"
+                    android:textSize="39px" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

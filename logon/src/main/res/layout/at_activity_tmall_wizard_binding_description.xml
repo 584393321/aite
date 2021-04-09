@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/_E6E2DF"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:titlebar_background="@color/transparent"
+        app:bartext="@string/at_bind_instructions" />
+
+    <com.aliyun.ayland.widget.ATObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="69px"
+                android:layout_marginRight="69px"
+                android:layout_marginTop="24px"
+                android:lineSpacingExtra="10px"
+                android:text="@string/at_tmall_wizard_binding_account_description_tip"
+                android:textColor="@color/_333333"
+                android:textSize="66px"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="399px"
+                android:layout_height="795px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_tip"
+                android:layout_marginRight="66px"
+                android:layout_marginTop="42px"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_tmjlbd_a" />
+
+            <LinearLayout
+                android:layout_width="564px"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_tip"
+                android:layout_marginLeft="69px"
+                android:layout_marginTop="174px"
+                android:background="@drawable/shape_30px_aea298_ffffff"
+                android:orientation="vertical"
+                android:paddingBottom="60px"
+                android:paddingLeft="42px"
+                android:paddingRight="42px"
+                android:paddingTop="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=".1"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:id="@+id/tv_tip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:lineSpacingExtra="10px" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="399px"
+                android:layout_height="795px"
+                android:layout_below="@id/tv_tip"
+                android:layout_marginLeft="69px"
+                android:layout_marginTop="588px"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_tmjlbd_b" />
+
+            <LinearLayout
+                android:layout_width="564px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_tip"
+                android:layout_marginRight="66px"
+                android:layout_marginTop="927px"
+                android:background="@drawable/shape_30px_aea298_ffffff"
+                android:orientation="vertical"
+                android:paddingBottom="63px"
+                android:paddingLeft="45px"
+                android:paddingRight="45px"
+                android:paddingTop="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=".2"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:id="@+id/tv_tip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:lineSpacingExtra="10px" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="399px"
+                android:layout_height="795px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_tip"
+                android:layout_marginBottom="141px"
+                android:layout_marginRight="66px"
+                android:layout_marginTop="1341px"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_tmjlbd_c" />
+
+            <LinearLayout
+                android:layout_width="564px"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_tip"
+                android:layout_marginLeft="69px"
+                android:layout_marginTop="1506px"
+                android:background="@drawable/shape_30px_aea298_ffffff"
+                android:orientation="vertical"
+                android:paddingBottom="57px"
+                android:paddingLeft="42px"
+                android:paddingRight="42px"
+                android:paddingTop="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=".3"
+                    android:textColor="@color/_666666"
+                    android:textSize="42px" />
+
+                <TextView
+                    android:id="@+id/tv_tip3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:lineSpacingExtra="10px" />
+
+                <TextView
+                    android:id="@+id/tv_tip4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:lineSpacingExtra="10px" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.aliyun.ayland.widget.ATObservableScrollView>
+</LinearLayout>

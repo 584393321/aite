@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radioGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="105px"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/rb_family"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:checked="true"
+        android:drawableBottom="@drawable/selector_54px9px_fda448"
+        android:drawablePadding="6px"
+        android:gravity="center"
+        android:text="@string/at_home_equipment"
+        android:textSize="45px"
+        android:textColor="@color/at_tab_shortcut_text" />
+
+    <RadioButton
+        android:id="@+id/rb_public"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120px"
+        android:button="@null"
+        android:drawableBottom="@drawable/selector_54px9px_fda448"
+        android:drawablePadding="6px"
+        android:gravity="center"
+        android:text="@string/at_community_equipment"
+        android:textSize="45px"
+        android:textColor="@color/at_tab_shortcut_text" />
+
+    <RadioButton
+        android:id="@+id/rb_scene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120px"
+        android:button="@null"
+        android:drawableBottom="@drawable/selector_54px9px_fda448"
+        android:drawablePadding="6px"
+        android:gravity="center"
+        android:text="@string/at_manual_linkage"
+        android:textSize="45px"
+        android:textColor="@color/at_tab_shortcut_text" />
+</RadioGroup>

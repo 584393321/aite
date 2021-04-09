@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_esptouch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_80999999"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="60px"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/shape_18px_f5f5f5">
+
+        <TextView
+            android:id="@+id/apSsidText"
+            android:layout_width="match_parent"
+            android:layout_height="186px"
+            android:background="@drawable/shape_12px_ffffff"
+            android:gravity="center"
+            android:layout_marginTop="144px"
+            android:textSize="60px"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textAppearance="?android:attr/textAppearanceMedium"  />
+
+        <EditText
+            android:id="@+id/apPasswordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="186px"
+            android:layout_marginTop="48px"
+            android:gravity="center"
+            android:background="@drawable/shape_12px_ffffff"
+            android:hint="@string/input_esptouch1_password_title"
+            android:inputType="textPassword"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_cccccc"
+            android:textSize="60px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="108px"
+            android:layout_marginBottom="48px">
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="396px"
+                android:layout_height="120px"
+                android:background="@drawable/shape_72px_b6b6b6"
+                android:textColor="@color/color_ffffff"
+                android:textSize="51px"
+                android:text="@string/esptouch1_cancel"/>
+
+            <Button
+                android:id="@+id/confirmBtn"
+                android:layout_width="396px"
+                android:layout_height="120px"
+                android:background="@drawable/shape_72px_f15e5e"
+                android:textColor="@color/color_ffffff"
+                android:textSize="51px"
+                android:layout_alignParentRight="true"
+                android:text="@string/esptouch1_confirm"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/apSsidLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:text="@string/esptouch1_ssid_title"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/apBssidLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:text="@string/esptouch1_bssid_title"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/apBssidText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/deviceCountEdit"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:visibility="gone"
+        android:hint="@string/esptouch1_device_count_title"
+        android:text="1" />
+
+    <RadioGroup
+        android:id="@+id/packageModeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/packageBroadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/esptouch1_package_broadcast" />
+
+        <RadioButton
+            android:id="@+id/packageMulticast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/esptouch1_package_multicast" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/messageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="top"
+        android:textColor="@android:color/holo_red_dark"/>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="840px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_18pxffffff"
+        android:orientation="vertical"
+        android:paddingBottom="72px"
+        android:paddingLeft="72px"
+        android:paddingRight="72px">
+
+        <TextView
+            android:id="@+id/dialog_delete_room_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:text="@string/at_notice"
+            android:textColor="@color/_202020"
+            android:textSize="54px" />
+
+        <TextView
+            android:id="@+id/dialog_delete_room_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64px"
+            android:background="@null"
+            android:hint="@string/at_del_confirm"
+            android:textColor="@color/_202020"
+            android:textSize="48px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64px">
+
+            <TextView
+                android:id="@+id/dialog_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="216px"
+                android:padding="20px"
+                android:text="@string/at_cancel"
+                android:textColor="@color/_999999"
+                android:textSize="42px" />
+
+            <TextView
+                android:id="@+id/dialog_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0px"
+                android:padding="20px"
+                android:text="@string/at_sure"
+                android:textColor="@color/_06D9CE"
+                android:textSize="42px" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

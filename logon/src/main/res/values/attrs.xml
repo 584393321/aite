@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="circle_loading_bar">
+        <attr name="bar_width" format="dimension" />
+        <attr name="bar_color" format="string" />
+        <attr name="bar_reach_color" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="AutoLayout_Layout">
+        <attr name="layout_auto_basewidth">
+            <flag name="width" value="1"/>
+            <flag name="height" value="2"/>
+            <flag name="textSize" value="4"/>
+            <flag name="padding" value="8"/>
+            <flag name="margin" value="16"/>
+            <flag name="marginLeft" value="32"/>
+            <flag name="marginTop" value="64"/>
+            <flag name="marginRight" value="128"/>
+            <flag name="marginBottom" value="256"/>
+            <flag name="paddingLeft" value="512"/>
+            <flag name="paddingTop" value="1024"/>
+            <flag name="paddingRight" value="2048"/>
+            <flag name="paddingBottom" value="4096"/>
+        </attr>
+        <attr name="layout_auto_baseheight">
+            <flag name="width" value="1"/>
+            <flag name="height" value="2"/>
+            <flag name="textSize" value="4"/>
+            <flag name="padding" value="8"/>
+            <flag name="margin" value="16"/>
+            <flag name="marginLeft" value="32"/>
+            <flag name="marginTop" value="64"/>
+            <flag name="marginRight" value="128"/>
+            <flag name="marginBottom" value="256"/>
+            <flag name="paddingLeft" value="512"/>
+            <flag name="paddingTop" value="1024"/>
+            <flag name="paddingRight" value="2048"/>
+            <flag name="paddingBottom" value="4096"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="mytitlebar">
+        <attr name="titlebar_background" format="reference" />
+        <attr name="bartext" format="string" />
+        <attr name="bttext" format="string" />
+        <attr name="backtext" format="string" />
+        <attr name="show_r_img" format="boolean" />
+        <attr name="show_ib" format="boolean" />
+        <attr name="title_color_drawable" format="reference" />
+        <attr name="show_choise" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ATSwitchView">
+        <attr name="hasShadow" format="boolean"/>
+        <attr name="primaryColor" format="color"/>
+        <attr name="primaryColorDark" format="color"/>
+        <attr name="offColor" format="color"/>
+        <attr name="offColorDark" format="color"/>
+        <attr name="shadowColor" format="color"/>
+        <attr name="ratioAspect" format="float"/>
+        <attr name="isOpened" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="ATSwitchButton" tools:ignore="ResourceName">
+        <attr name="kswThumbDrawable" format="reference"/>
+        <attr name="kswThumbColor" format="color|reference"/>
+        <attr name="kswThumbMargin" format="dimension|reference"/>
+        <attr name="kswThumbMarginTop" format="dimension|reference"/>
+        <attr name="kswThumbMarginBottom" format="dimension|reference"/>
+        <attr name="kswThumbMarginLeft" format="dimension|reference"/>
+        <attr name="kswThumbMarginRight" format="dimension|reference"/>
+        <attr name="kswThumbWidth" format="dimension|reference"/>
+        <attr name="kswThumbHeight" format="dimension|reference"/>
+        <attr name="kswThumbRadius" format="dimension|reference"/>
+        <attr name="kswBackRadius" format="dimension|reference"/>
+        <attr name="kswBackDrawable" format="reference"/>
+        <attr name="kswBackColor" format="color|reference"/>
+        <attr name="kswFadeBack" format="boolean"/>
+        <attr name="kswThumbRangeRatio" format="float"/>
+        <attr name="kswAnimationDuration" format="integer"/>
+        <attr name="kswTintColor" format="color|reference"/>
+        <attr name="kswTextOn" format="string"/>
+        <attr name="kswTextOff" format="string"/>
+        <attr name="kswTextThumbInset" format="dimension"/>
+        <attr name="kswTextExtra" format="dimension"/>
+        <attr name="kswTextAdjust" format="dimension"/>
+    </declare-styleable>
+
+    <!--easeui-->
+    <declare-styleable name="ATEaseChatMessageList">
+        <attr name="msgListMyBubbleBackground" format="reference"/>
+        <attr name="msgListOtherBubbleBackground" format="reference"/>
+        <attr name="msgListShowUserAvatar" format="boolean"/>
+        <attr name="msgListShowUserNick" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="EaseConversationList">
+        <attr name="cvsListPrimaryTextColor" format="color"/>
+        <attr name="cvsListSecondaryTextColor" format="color"/>
+        <attr name="cvsListTimeTextColor" format="color"/>
+        <attr name="cvsListPrimaryTextSize" format="dimension"/>
+        <attr name="cvsListSecondaryTextSize" format="dimension"/>
+        <attr name="cvsListTimeTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="EaseContactList">
+        <attr name="ctsListPrimaryTextColor" format="color"/>
+        <attr name="ctsListPrimaryTextSize" format="dimension"/>
+        <attr name="ctsListShowSiderBar" format="boolean"/>
+        <attr name="ctsListInitialLetterBg" format="reference|color"/>
+        <attr name="ctsListInitialLetterColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ATATEaseEmojiconMenu">
+        <attr name="bigEmojiconRows" format="integer"/>
+        <attr name="emojiconColumns" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ATEaseChatExtendMenu">
+        <attr name="numColumns" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ATEaseTitleBar">
+        <attr name="titleBarTitle" format="string"/>
+        <attr name="titleBarLeftImage" format="reference"/>
+        <attr name="titleBarRightImage" format="reference"/>
+        <attr name="titleBarBackground" format="reference|color"/>
+    </declare-styleable>
+
+    <declare-styleable name="EaseSwitchButton">
+        <attr name="switchOpenImage" format="reference"/>
+        <attr name="switchCloseImage" format="reference"/>
+        <attr name="switchStatus">
+            <enum name="open" value="0"/>
+            <enum name="close" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ATEaseImageView">
+        <attr name="ease_border_color" format="color" />
+        <attr name="ease_border_width" format="dimension" />
+        <attr name="ease_press_alpha" format="integer" />
+        <attr name="ease_press_color" format="color" />
+        <attr name="ease_radius" format="dimension" />
+        <attr name="ease_shape_type" format="enum">
+            <enum name="none" value="0" />
+            <enum name="round" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

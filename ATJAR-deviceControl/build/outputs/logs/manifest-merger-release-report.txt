@@ -1,0 +1,75 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:2:1-36:12
+	package
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:3:5-37
+		INJECTED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml
+		INJECTED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:5:5-30
+		INJECTED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml
+		INJECTED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:4:5-28
+		INJECTED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml
+		INJECTED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml
+uses-sdk
+ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:9:9-38
+	android:minSdkVersion
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:8:9-35
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:11:22-76
+uses-permission#android.permission.INTERNET
+ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:12:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:13:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:14:22-77
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:15:5-75
+	android:name
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:15:22-72
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:16:5-78
+	android:name
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:16:22-75
+uses-permission#android.permission.SYSTEM_OVERLAY_WINDOW
+ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:17:5-80
+	android:name
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:17:22-77
+uses-permission#com.android.launcher.permission.INSTALL_SHORTCUT
+ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:18:5-88
+	android:name
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:18:22-85
+uses-permission#com.android.launcher.permission.UNINSTALL_SHORTCUT
+ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:19:5-90
+	android:name
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:19:22-87
+application
+ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:21:5-34:19
+	android:label
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:23:9-44
+	android:allowBackup
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:22:9-35
+service#com.xhc.sbh.tool.lists.apkinstall.RemoteUpgradeService
+ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:25:9-26:19
+	android:name
+		ADDED from D:\project\customer\longguang\logon\ATJAR-deviceControl\AndroidManifest.xml:25:18-87

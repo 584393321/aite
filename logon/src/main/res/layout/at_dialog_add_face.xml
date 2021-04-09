@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="700px"
+        android:layout_height="700px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_30pxf5f5f5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/at_bg_tianjiarenlianxingxi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/at_hint_add_face"
+                android:textSize="36px"
+                android:layout_marginTop="40px"/>
+
+            <Button
+                android:id="@+id/btn_add_face"
+                android:layout_width="430px"
+                android:layout_height="136px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60px"
+                android:background="@drawable/at_common_btn_zhongchangck"
+                android:gravity="center"
+                android:text="添加人脸信息"
+                android:textColor="#CDFF9800"
+                android:textSize="48px" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="444px"
+        android:layout_height="444px"
+        android:scaleType="fitXY"
+        android:layout_marginTop="114px"
+        android:background="@drawable/at_bg_yuyuechenggong" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42px"
+        android:text="添加完成"
+        android:textColor="@color/_EBB080"
+        android:textSize="72px"
+        android:textStyle="bold" />
+</LinearLayout>

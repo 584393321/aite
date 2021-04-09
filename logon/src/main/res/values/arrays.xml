@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="monitor_titles">
+        <item>监控画面</item>
+        <item>保存记录</item>
+        <item>监控记录</item>
+    </string-array>
+    <string-array name="tab_face_manage">
+        <item>小区审核</item>
+        <item>使用记录</item>
+    </string-array>
+    <string-array name="tab_vehicle_passage">
+        <item>我家的车</item>
+        <item>通行记录</item>
+    </string-array>
+    <string-array name="tab_discover_device_titles">
+        <item>云端设备</item>
+        <item>本地设备</item>
+    </string-array>
+    <string-array name="at_room_type">
+        <item>at_chufang</item>
+        <item>at_keting</item>
+        <item>at_yangtai</item>
+        <item>at_weishengjian</item>
+        <item>at_xuanguan</item>
+        <item>at_canting</item>
+        <item>at_zhuwo</item>
+        <item>at_kewo</item>
+        <item>at_ciwo</item>
+        <item>at_kid</item>
+        <item>at_baomu</item>
+        <item>at_shufang</item>
+        <item>at_yimaojian</item>
+        <item>at_commonly</item>
+    </string-array>
+    <string-array name="tagKey">
+        <item>TRIGGER</item>
+        <item>CONDITION</item>
+        <item>ACTION</item>
+    </string-array>
+    <string-array name="sf_tab_main">
+        <item>设备</item>
+        <item>场景</item>
+    </string-array>
+</resources>

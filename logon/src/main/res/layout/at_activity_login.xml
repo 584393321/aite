@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:background="@color/_482B0D"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_login"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/toolbar_padding_top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270px"
+            android:paddingRight="75px">
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120px"
+                android:text="@string/at_login"
+                android:textColor="@color/white"
+                android:textSize="72px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_regist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="369px"
+                android:text="@string/at_regist"
+                android:textColor="@color/_E1E1E1"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="27px"
+                android:text="@string/at_text_forget_password"
+                android:textColor="@color/_E1E1E1"
+                android:textSize="42px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_phone"
+            android:layout_width="840px"
+            android:layout_height="156px"
+            android:layout_marginTop="123px"
+            android:background="@drawable/selector_81px3px_99ffffff_ffffff"
+            android:paddingLeft="60px"
+            android:paddingRight="60px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_ico_shoujihao" />
+
+            <com.aliyun.ayland.widget.ATClearEditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@._"
+                android:gravity="center"
+                android:hint="@string/at_text_import_phonenumber"
+                android:inputType="number|textEmailAddress"
+                android:maxLength="11"
+                android:textColor="@color/white"
+                android:textColorHint="@color/_E1E1E1"
+                android:textCursorDrawable="@drawable/shape_15px_6px60px_fda448"
+                android:textSize="@dimen/text_size_middle" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_password"
+            android:layout_width="840px"
+            android:layout_height="156px"
+            android:layout_marginTop="90px"
+            android:background="@drawable/selector_81px3px_99ffffff_ffffff"
+            android:paddingLeft="60px"
+            android:paddingRight="60px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_ico_mima" />
+
+            <com.aliyun.ayland.widget.ATClearEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/at_text_import_password"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textColorHint="@color/_E1E1E1"
+                android:textCursorDrawable="@drawable/shape_15px_6px60px_fda448"
+                android:textSize="@dimen/text_size_middle" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="840px"
+            android:layout_height="144px"
+            android:layout_marginTop="78px"
+            android:background="@drawable/shape_72px_efcdaa_to_eeb67d"
+            android:text="@string/at_text_login"
+            android:textColor="@color/white"
+            android:textSize="51px"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90px"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="18px"
+        android:textSize="39px" />
+</RelativeLayout>

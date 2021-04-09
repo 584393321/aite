@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aliyun.ayland.widget.ATObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="60px"
+                android:text="@string/at_water_purifier"
+                android:textColor="@color/_333333"
+                android:textSize="60px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_water_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="75px"
+                android:text="开机"
+                android:textColor="@color/_999999"
+                android:textSize="42px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px">
+
+            <ImageView
+                android:id="@+id/img_water_amount"
+                android:layout_width="642px"
+                android:layout_height="642px"
+                android:src="@drawable/athome_hjsj_bg_c"
+                android:layout_centerInParent="true"/>
+
+            <LinearLayout
+                android:id="@+id/ll_total"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="222px"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="500"
+                    android:textSize="120px"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="ml"
+                    android:textSize="60px"
+                    android:layout_marginLeft="12px"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@id/ll_total"
+                android:layout_centerHorizontal="true"
+                android:text="总水量"
+                android:textSize="54px"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_water_switch"
+            android:layout_width="264px"
+            android:layout_height="132px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50px"
+            android:background="@drawable/selector_66px_ffffff_e6e6e6"
+            android:elevation="20px">
+
+            <ImageView
+                android:id="@+id/img_water_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/athome_hjsj_ico_kaiji" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_water_out"
+                android:layout_width="498px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/shape_circle_18px_79b4f7"
+                android:layout_marginLeft="90px"
+                android:drawablePadding="30px"
+                android:text="@string/at_water_out_tds"
+                android:textSize="42px"
+                android:textColor="@color/_666666" />
+
+            <TextView
+                android:id="@+id/tv_water_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/shape_circle_18px_79b4f7"
+                android:drawablePadding="30px"
+                android:text="@string/at_water_first_tds"
+                android:textSize="42px"
+                android:textColor="@color/_666666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_water_one"
+                android:layout_width="498px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/shape_circle_18px_ebb080"
+                android:layout_marginLeft="90px"
+                android:drawablePadding="30px"
+                android:text="@string/at_water_first_filter_life"
+                android:textSize="42px"
+                android:textColor="@color/_666666" />
+
+            <TextView
+                android:id="@+id/tv_water_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/shape_circle_18px_ebb080"
+                android:drawablePadding="30px"
+                android:text="@string/at_water_second_filter_life"
+                android:textSize="42px"
+                android:textColor="@color/_666666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_water_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/shape_circle_18px_ebb080"
+                android:layout_marginLeft="90px"
+                android:drawablePadding="30px"
+                android:text="@string/at_water_third_filter_life"
+                android:textSize="42px"
+                android:textColor="@color/_666666" />
+        </LinearLayout>
+    </LinearLayout>
+</com.aliyun.ayland.widget.ATObservableScrollView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="996px"
+    android:layout_height="285px"
+    android:layout_marginLeft="45px"
+    android:layout_marginTop="36px"
+    android:background="@drawable/selector_12px_ffffff_e6e6e6"
+    android:paddingLeft="45px">
+
+    <TextView
+        android:id="@+id/tv_park_lot"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="30px"
+        android:textColor="@color/_666666"
+        android:textSize="39px" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="42px"
+        android:layout_marginTop="33px"
+        android:textColor="@color/_666666"
+        android:textSize="36px" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/at_ic_s_txjl_ren"
+        android:layout_marginTop="132px" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="153px"
+        android:layout_marginTop="153px"
+        android:textColor="@color/_333333"
+        android:textSize="45px" />
+
+    <TextView
+        android:id="@+id/tv_in_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="75px"
+        android:layout_marginTop="153px"
+        android:textColor="@color/_EBB080"
+        android:textSize="45px" />
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_choose"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_trigger_timing"
+        android:layout_width="match_parent"
+        android:layout_height="672px"
+        android:layout_marginTop="36px"
+        android:layout_marginLeft="39px"
+        android:paddingLeft="45px"
+        android:paddingRight="45px"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
+        android:layout_marginRight="39px"
+        android:visibility="gone"
+        android:background="@drawable/shape_12px_f5f5f5">
+
+        <RelativeLayout
+            android:id="@+id/rl_timing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="899px"
+            android:paddingTop="20px"
+            android:text="分"
+            android:textColor="@color/_333333"
+            android:textSize="42px" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_tca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36px"
+        android:visibility="gone"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_delay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42px"
+        android:layout_marginTop="36px"
+        android:text="@string/at_do_after_done"
+        android:textColor="@color/_999999"
+        android:textSize="36px"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_delay"
+        android:layout_width="match_parent"
+        android:layout_height="162px"
+        android:layout_marginTop="36px"
+        android:layout_marginLeft="39px"
+        android:layout_marginRight="39px"
+        android:paddingLeft="45px"
+        android:paddingRight="45px"
+        android:visibility="gone"
+        android:background="@drawable/selector_12px_f5f5f5_eeeeee">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/at_delay_perform"
+            android:textColor="@color/_333333"
+            android:textSize="45px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/atico_junp" />
+
+        <TextView
+            android:id="@+id/tv_delay_perform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="100px"
+            android:text="@string/at_perform_now"
+            android:textColor="@color/_86523C"
+            android:textSize="45px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_delay_popup"
+        android:layout_width="match_parent"
+        android:layout_height="672px"
+        android:layout_marginTop="36px"
+        android:layout_marginLeft="39px"
+        android:paddingLeft="45px"
+        android:paddingRight="45px"
+        android:paddingTop="30px"
+        android:paddingBottom="30px"
+        android:layout_marginRight="39px"
+        android:visibility="gone"
+        android:background="@drawable/shape_12px_f5f5f5">
+
+        <RelativeLayout
+            android:id="@+id/rl_delay_popup1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="600px"
+            android:paddingTop="20px"
+            android:text="秒"
+            android:textColor="@color/_333333"
+            android:textSize="45px" />
+    </RelativeLayout>
+</LinearLayout>

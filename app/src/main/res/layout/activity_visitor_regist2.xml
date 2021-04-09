@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.MyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/visitor_regist" />
+
+    <com.aliyun.ayland.widget.ObservableScrollView
+        android:id="@+id/observableScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="45px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="45px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/visitor_name"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="800px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="@color/_F1F1F1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="45px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phone3"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <EditText
+                        android:id="@+id/et_visitor_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:maxLength="11"
+                        android:gravity="right|center_vertical"
+                        android:hint="@string/input_visitors_phone"
+                        android:inputType="number"
+                        android:textColor="@color/_333333"
+                        android:textColorHint="@color/_DDDDDD"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="@color/_F1F1F1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:paddingRight="45px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/visit_address"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="800px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/atico_junp"
+                        android:text="@string/select_visit_room"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/_DDDDDD"
+                        android:textSize="45px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="@color/_F1F1F1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:paddingRight="45px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/visit_the_owner"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:id="@+id/tv_owner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/atico_junp"
+                        android:text="@string/select_visit_the_owner"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/_DDDDDD"
+                        android:textSize="45px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="@color/_F1F1F1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:paddingRight="45px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_visit_time"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:id="@+id/tv_visit_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/atico_junp"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/at_select_visit_time"
+                        android:textColor="@color/_DDDDDD"
+                        android:textSize="45px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="@color/_F1F1F1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:paddingRight="45px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_leave_time"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:id="@+id/tv_leave_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/atico_junp"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/at_select_leave_time"
+                        android:textColor="@color/_DDDDDD"
+                        android:textSize="45px" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:background="@color/_F1F1F1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:paddingRight="45px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/is_motors"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_motors"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_motors_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawablePadding="15px"
+                            android:drawableRight="@drawable/selector_checkbox"
+                            android:gravity="center"
+                            android:text="@string/at_yes"
+                            android:textColor="@color/_666666"
+                            android:textSize="45px" />
+
+                        <RadioButton
+                            android:id="@+id/rb_motors_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="114px"
+                            android:button="@null"
+                            android:drawablePadding="15px"
+                            android:drawableRight="@drawable/selector_checkbox"
+                            android:gravity="center"
+                            android:text="@string/at_no"
+                            android:textColor="@color/_666666"
+                            android:textSize="45px" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_plate"
+                    android:layout_width="match_parent"
+                    android:layout_height="153px"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="@color/_F1F1F1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/plate_number"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:id="@+id/tv_plate_numbers"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="45px"
+                        android:drawableRight="@drawable/atico_junp"
+                        android:gravity="center_vertical|right"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:textColor="@color/_DDDDDD"
+                        android:textSize="45px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_park"
+                    android:layout_width="match_parent"
+                    android:layout_height="153px"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="@color/_F1F1F1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_park"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:id="@+id/tv_visite_park"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="45px"
+                        android:drawableRight="@drawable/atico_junp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:maxLines="1"
+                        android:text="@string/at_select_park"
+                        android:textColor="@color/_DDDDDD"
+                        android:textSize="45px" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="960px"
+                android:layout_height="135px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="126px"
+                android:background="@drawable/selector_150px_1478c8_005395"
+                android:gravity="center"
+                android:text="@string/send_appointment_sms"
+                android:textColor="@color/white"
+                android:textSize="45px" />
+        </LinearLayout>
+    </com.aliyun.ayland.widget.ObservableScrollView>
+</LinearLayout>

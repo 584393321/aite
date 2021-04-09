@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aliyun.ayland.base.autolayout.ATAutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.base.autolayout.ATAutoLinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="945px"
+        android:layout_height="1110px"
+        android:background="@drawable/shape_15px_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="48px"
+            android:text="通行二维码"
+            android:textColor="@color/_333333"
+            android:textSize="66px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="765px"
+            android:layout_height="765px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45px" />
+
+        <TextView
+            android:id="@+id/tv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="51px"
+            android:drawableLeft="@drawable/at_zhihui_ico_refresh"
+            android:drawablePadding="9px"
+            android:gravity="center"
+            android:text="自动刷新"
+            android:textColor="@color/_86523C"
+            android:textSize="45px" />
+    </com.aliyun.ayland.base.autolayout.ATAutoLinearLayout>
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50px"
+        android:src="@drawable/at_hsh_btn_guanbitanchuan" />
+</com.aliyun.ayland.base.autolayout.ATAutoLinearLayout>

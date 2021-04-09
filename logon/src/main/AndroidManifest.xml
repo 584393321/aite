@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.anthouse.xuhui">
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- 权限级别: dangerous -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 权限级别: normal -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <permission
+        android:name="com.anthouse.xuhui.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.anthouse.xuhui.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/at_logo"
+        android:label="@string/at_app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label,android:allowBackup,android:theme,android:icon"
+        android:usesCleartextTraffic="true">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <activity android:name="com.aliyun.ayland.ui.activity.ATOldYoungCareFindLocationDetailsActivity"/>
+        <activity android:name="com.aliyun.ayland.ui.activity.ATOldYoungCareFindLocationActivity" />
+        <activity android:name="com.aliyun.ayland.ui.activity.ATOldYoungCareRecordActivity" />
+        <activity android:name="com.aliyun.ayland.ui.activity.ATPublicSecurityMainActivity" />
+        <activity android:name="com.aliyun.ayland.ui.activity.ATCareFunctionSetActivity" />
+        <activity android:name="com.aliyun.ayland.ui.activity.ATOldYoungCareActivity" />
+
+        <meta-data
+            android:name="com.alibaba.app.appkey"
+            android:value="32585218" />
+        <meta-data
+            android:name="com.alibaba.app.appsecret"
+            android:value="51c54e69d97672187a6066c64ace8b7f" />
+
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+        <!-- 适配全面屏 -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATWelcomeActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/welcomeTheme">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name="com.aliyun.ayland.ui.activity.ATDiscoveryDeviceActivity" />
+        <activity android:name="com.aliyun.ayland.ui.activity.ATDiscoveryDeviceSearchActivity" />
+        <activity android:name="com.aliyun.ayland.ui.activity.ATDiscoveryDeviceProductActivity" />
+        <activity android:name="com.aliyun.ayland.ui.activity.ATProductListActivity" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATRegistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATEmptyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATDeviceBindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.widget.zxing.android.ATCaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATManageRoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATEditRoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATRoomPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageAddActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageRecommendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageEquipmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageAddConditionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageBoxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageBoxToActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageTimingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageTimingRepeatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageStatusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageStatusChoiseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageStatusToActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageSendAppMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageIconActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkagePerformSceneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageAccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageCarAccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageAccessBizTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATEquipmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLinkageLogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATWarningNoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLivePlayerActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATLocalVideoActivity"
+            android:hardwareAccelerated="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATIntelligentMonitorActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:supportsPictureInPicture="true" />
+        <!-- 通话中转界面只是为了解决硬件加速问题 -->
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATCallActivityTransferActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity> <!-- <activity -->
+        <!-- android:name="com.aliyun.ayland.ui.activity.VideoATCallActivityty" -->
+        <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+        <!-- android:hardwareAccelerated="true" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- android:supportsPictureInPicture="true" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATVideoATCallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATHomeShortcutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATHomeApplicationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATRankingListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATConvenientPublishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATConvenientPublishCommunityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATVisitorAppointActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATVisitorRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATShareSpaceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATShareGardenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATVisitorAppointResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATUserActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATUserCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATUserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATUserNickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATUserFaceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATVehicleCheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATVehicleCheckDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATVehiclePassageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATMyCarAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATMyCarDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATCalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATTianMaoWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATDeviceManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATDeviceManageToActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATDeviceManageMineToActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATDeviceManageSharedToActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATTmallWizardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATTmallVoiceWizardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATTmallWizardBindingDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATTmallVoiceWizardLinkageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATScoreDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATScoreRuleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATChangeHouseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATAboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATPhotoViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATFamilySecurityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATPublicSecurityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATAlarmRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATCommunityCreateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATCommunityTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATEnvironmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATRecommendSceneDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATMessageCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATFamilyManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATFamilyManageTransferActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATFamilyManageAdviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATFamilyManageEntryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATFamilyManageMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATFamilyMonitorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATSensorSecurityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATVisualIntercomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATSmartLockSecurityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATMonitorCallingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+<!--        <receiver-->
+<!--            android:name="com.aliyun.ayland.core.ATMyMessageReceiver"-->
+<!--            android:exported="false">-->
+<!--            &lt;!&ndash; 为保证receiver安全，建议设置不可导出，如需对其他应用开放可通过android：permission进行限制 &ndash;&gt;-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />-->
+<!--            </intent-filter>-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />-->
+<!--            </intent-filter>-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.alibaba.sdk.android.push.RECEIVE" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+
+        <service android:name="com.aliyun.ayland.service.ATRecordService" />
+        <service
+            android:name="com.taobao.accs.internal.AccsJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":channel" />
+        <!-- 活体图像采集界面 -->
+        <activity
+            android:name="com.aliyun.ayland.widget.face.ATFaceLivenessExpActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 人脸跟踪采集界面 -->
+        <activity
+            android:name="com.aliyun.ayland.widget.face.ATFaceDetectExpActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_NoTitle" />
+        <!--        收房-->
+        <activity
+            android:name="com.aliyun.ayland.ui.activity.ATSFMainActivity"
+            android:screenOrientation="portrait" />
+
+        <!--<provider-->
+            <!--android:name="android.support.v4.content.FileProvider"-->
+            <!--android:authorities="com.anthouse.ayland.fileProvider"-->
+            <!--android:exported="false"-->
+            <!--android:grantUriPermissions="true">-->
+            <!--<meta-data-->
+                <!--android:name="android.support.FILE_PROVIDER_PATHS"-->
+                <!--android:resource="@xml/file_paths" />-->
+        <!--</provider>-->
+
+        <receiver
+            android:name="com.aliyun.ayland.service.ATKeepAliveReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.aliyun.ayland.service.ATSocketServer"
+            android:exported="true" />
+        <service android:name="com.aliyun.ayland.service.ATSocketServer$InnerService" />
+    </application>
+</manifest>

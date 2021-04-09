@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/at_home_bg_rllv_m"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="142px"
+        android:layout_below="@id/status_bar"
+        android:elevation="10px">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_transparent_login_btn"
+            android:drawableLeft="@drawable/ioc_back_w"
+            android:drawablePadding="19px"
+            android:gravity="center_vertical"
+            android:paddingLeft="42px"
+            android:paddingRight="42px"
+            android:text="@string/at_back"
+            android:textColor="@color/white"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tv_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="@string/at_face_logging"
+            android:textColor="@color/white"
+            android:textSize="54px" />
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_transparent"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="72px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/at_common_btn_csxanniu"
+                android:gravity="center"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:text="@string/at_add"
+                android:textColor="@color/_EBB080"
+                android:textSize="42px" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.aliyun.ayland.widget.ATObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/liveness_root_layout"
+                android:layout_width="960px"
+                android:layout_height="1280px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40px">
+
+                <FrameLayout
+                    android:id="@+id/liveness_surface_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.baidu.idl.face.platform.ui.widget.FaceDetectRoundView
+                    android:id="@+id/liveness_face_round"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="80px"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/liveness_success_image"
+                    android:layout_width="90px"
+                    android:layout_height="90px"
+                    android:layout_marginTop="140px"
+                    android:src="@mipmap/ic_success"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/img_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="18px"
+                    android:src="@drawable/at_pic_s_rlgl_rentouxiang" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/liveness_bottom_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="66px"
+                android:text="@string/at_getting_the_eigenvalue_"
+                android:textColor="@color/white"
+                android:textSize="54px" />
+
+            <Button
+                android:id="@+id/btn_logging"
+                android:layout_width="426px"
+                android:layout_height="132px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="52px"
+                android:background="@drawable/selector_66px_fcd6abf8e8c1_f7de92f9b49c"
+                android:gravity="center"
+                android:text="@string/at_start_logging"
+                android:textColor="@color/white"
+                android:textSize="51px" />
+        </LinearLayout>
+    </com.aliyun.ayland.widget.ATObservableScrollView>
+</LinearLayout>

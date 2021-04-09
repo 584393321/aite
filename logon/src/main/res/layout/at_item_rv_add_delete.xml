@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="135px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="134px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/selector_12px_ccffffff_66ffffff"
+        android:gravity="center"
+        android:text="@string/at_delete"
+        android:textColor="@color/_E85D3E"
+        android:textSize="42px"
+        android:visibility="gone" />
+</LinearLayout>

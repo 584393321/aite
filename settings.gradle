@@ -1,0 +1,1 @@
+include ':app',':ATJAR-deviceControl', ':identify', ':opnecvlibrary', ':logon', ':faceplatform-ui', ':faceplatform', ':esptouch'

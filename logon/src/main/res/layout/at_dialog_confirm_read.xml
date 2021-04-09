@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="1080px"
+        android:layout_height="1920px">
+
+        <LinearLayout
+            android:id="@+id/rl_content"
+            android:layout_width="936px"
+            android:layout_height="1365px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_36px_ffffff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:text="用户隐私协议及条款"
+                android:textStyle="bold"
+                android:textColor="@color/_162136"
+                android:textSize="60px" />
+
+            <com.aliyun.ayland.widget.ATObservableScrollView
+                android:layout_width="match_parent"
+                android:layout_height="825px"
+                android:layout_margin="45px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="10px"
+                        android:text="我们根据最新的法律法规、监管政策，向您说明龙光汇生活APP的隐私政策，特向您推送本提示。请您阅读并充分理解相应条款。"
+                        android:textColor="@color/_515669"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40px"
+                        android:text="我们承诺："
+                        android:textColor="@color/_515669"
+                        android:textSize="42px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13px"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="18px"
+                            android:layout_height="18px"
+                            android:layout_marginRight="33px"
+                            android:layout_marginTop="20px"
+                            android:background="@drawable/shape_oval_18px_a5acb8" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="10px"
+                            android:text="我们会严格按照《网络安全法》、《信息网络传播保护条例》等法律法规保护您的个人信息。"
+                            android:textColor="@color/_515669"
+                            android:textSize="42px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13px"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="18px"
+                            android:layout_height="18px"
+                            android:layout_marginRight="33px"
+                            android:layout_marginTop="20px"
+                            android:background="@drawable/shape_oval_18px_a5acb8" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="10px"
+                            android:text="如果未经您的授权，我们绝不会使用您的个人信息用于您未授权的任何事项。"
+                            android:textColor="@color/_515669"
+                            android:textSize="42px" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40px"
+                        android:lineSpacingExtra="10px"
+                        android:text="当您点击“同意”按钮，即表示您已经阅读并同意我们的《服务协议》及《隐私政策》，我们将继续为您提供优质的产品和服务。"
+                        android:textColor="@color/_515669"
+                        android:textSize="42px" />
+                </LinearLayout>
+            </com.aliyun.ayland.widget.ATObservableScrollView>
+
+            <TextView
+                android:id="@+id/tv_service_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="42px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="33px"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_refuse"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="30px"
+                    android:layout_height="144px"
+                    android:background="@drawable/selector_66px_d1d5da_to_b1b5ba"
+                    android:gravity="center"
+                    android:text="@string/at_text_not_allow"
+                    android:textColor="@color/white"
+                    android:textSize="51px" />
+
+                <TextView
+                    android:id="@+id/tv_agree"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="30px"
+                    android:layout_height="144px"
+                    android:background="@drawable/selector_66px_fcd6abf8e8c1_f7de92f9b49c"
+                    android:gravity="center"
+                    android:text="@string/at_agree"
+                    android:textColor="@color/white"
+                    android:textSize="51px" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

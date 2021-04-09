@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_shared_device" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="39px"
+        android:layout_marginRight="39px"
+        android:layout_height="270px"
+        android:layout_marginTop="36px"
+        android:background="@drawable/shape_12px_f5f5f5"
+        android:orientation="vertical"
+        android:paddingRight="45px"
+        android:paddingLeft="45px">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:textColor="@color/_999999"
+            android:textSize="39px" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="136px"
+            android:textColor="@color/_333333"
+            android:textSize="54px" />
+
+        <ImageView
+            android:id="@+id/img_unbind"
+            android:layout_width="wrap_content"
+            android:src="@drawable/atico_glfj_shanchu"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

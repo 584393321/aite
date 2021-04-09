@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_app_message"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="45px"
+        android:layout_marginLeft="84px"
+        android:textSize="54px"
+        android:textColor="@color/_333333"
+        android:text="@string/at_send_message_to_phone"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="516px"
+        android:layout_marginLeft="39px"
+        android:layout_marginRight="39px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/shape_12px_3pxf0f0f0">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="@string/at_input_send_app_message"
+            android:maxLength="50"
+            android:paddingLeft="45px"
+            android:paddingRight="45px"
+            android:paddingTop="51px"
+            android:textColor="@color/_333333"
+            android:textColorHint="@color/_CCCCCC"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="36px"
+            android:layout_marginRight="54px"
+            android:text="0/50"
+            android:textColor="@color/_CCCCCC"
+            android:textSize="42px" />
+    </RelativeLayout>
+</LinearLayout>

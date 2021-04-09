@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aliyun.ayland.widget.ATObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/toolbar_padding_top">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="109px"/>
+
+        <RelativeLayout
+            android:layout_width="950px"
+            android:layout_height="852px"
+            android:layout_marginTop="21px">
+
+            <View
+                android:layout_width="900px"
+                android:layout_height="291px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="44px"
+                android:background="@drawable/shape_30pxf6ebe3" />
+
+            <RelativeLayout
+                android:layout_width="950px"
+                android:layout_height="786px"
+                android:background="@drawable/shape_30px_fefdfd_cc_e6_ff">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="366px"
+                    android:layout_height="155px"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="23px"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_login"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/at_login"
+                        android:textSize="51px" />
+
+                    <RadioButton
+                        android:id="@+id/rb_regist"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/at_regist"
+                        android:textSize="51px" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/ll_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="242px"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.aliyun.ayland.widget.ATClearEditText
+                        android:id="@+id/et_number_phone"
+                        android:layout_width="810px"
+                        android:layout_height="139px"
+                        android:background="@null"
+                        android:digits="0123456789"
+                        android:gravity="center"
+                        android:hint="@string/at_text_import_phonenumber"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textColor="@color/_666666"
+                        android:textColorHint="@color/_CCCCCC"
+                        android:textSize="42px" />
+
+                    <ImageView
+                        android:id="@+id/img_line_phone"
+                        android:layout_width="810px"
+                        android:layout_height="2px"
+                        android:background="@color/_DDDDDD" />
+
+                    <LinearLayout
+                        android:layout_width="810px"
+                        android:layout_height="142px"
+                        android:layout_marginTop="15px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20px"
+                            android:src="@drawable/at_login_hide_n"
+                            android:visibility="invisible" />
+
+                        <com.aliyun.ayland.widget.ATClearEditText
+                            android:id="@+id/et_password"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:hint="@string/at_text_import_password"
+                            android:inputType="textPassword"
+                            android:maxLength="20"
+                            android:textColor="@color/_666666"
+                            android:textColorHint="@color/_CCCCCC"
+                            android:textSize="42px" />
+
+                        <ImageView
+                            android:id="@+id/img_password_visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:src="@drawable/at_login_hide_n" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_line_password"
+                        android:layout_width="810px"
+                        android:layout_height="2px"
+                        android:background="@color/_DDDDDD" />
+
+                    <TextView
+                        android:id="@+id/tv_forget_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="35px"
+                        android:text="@string/at_text_forget_password"
+                        android:textColor="@color/_999999"
+                        android:textSize="38px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_regist"
+                    android:layout_width="810px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="176px"
+                    android:orientation="vertical">
+
+                    <com.aliyun.ayland.widget.ATClearEditText
+                        android:id="@+id/et_number_phone1"
+                        android:layout_width="810px"
+                        android:layout_height="139px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:digits="0123456789"
+                        android:gravity="center"
+                        android:hint="@string/at_text_import_phonenumber"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textColor="@color/_666666"
+                        android:textColorHint="@color/_CCCCCC"
+                        android:textSize="42px" />
+
+                    <ImageView
+                        android:id="@+id/img_line_phone1"
+                        android:layout_width="810px"
+                        android:layout_height="2px"
+                        android:background="@color/_DDDDDD" />
+
+                    <LinearLayout
+                        android:layout_width="810px"
+                        android:layout_height="142px"
+                        android:layout_marginTop="15px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20px"
+                            android:background="@drawable/shape_45px_fce5cc_to_fef2d5"
+                            android:gravity="center"
+                            android:paddingBottom="14px"
+                            android:paddingLeft="28px"
+                            android:paddingRight="28px"
+                            android:paddingTop="14px"
+                            android:text="@string/at_get_verification_code"
+                            android:textColor="@color/_B98C67"
+                            android:textSize="32px"
+                            android:visibility="invisible" />
+
+                        <com.aliyun.ayland.widget.ATClearEditText
+                            android:id="@+id/et_code"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:hint="@string/at_import_code"
+                            android:inputType="textPassword"
+                            android:maxLength="20"
+                            android:textColor="@color/_666666"
+                            android:textColorHint="@color/_CCCCCC"
+                            android:textSize="42px" />
+
+                        <TextView
+                            android:id="@+id/tv_get_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20px"
+                            android:background="@drawable/shape_45px_fce5cc_to_fef2d5"
+                            android:gravity="center"
+                            android:paddingBottom="14px"
+                            android:paddingLeft="28px"
+                            android:paddingRight="28px"
+                            android:paddingTop="14px"
+                            android:text="@string/at_get_verification_code"
+                            android:textColor="@color/_B98C67"
+                            android:textSize="32px" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_line_code"
+                        android:layout_width="810px"
+                        android:layout_height="2px"
+                        android:background="@color/_DDDDDD" />
+
+                    <LinearLayout
+                        android:layout_width="810px"
+                        android:layout_height="142px"
+                        android:layout_marginTop="15px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.aliyun.ayland.widget.ATClearEditText
+                            android:id="@+id/et_password1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:hint="@string/at_set_6_20_password"
+                            android:inputType="textPassword"
+                            android:maxLength="20"
+                            android:textColor="@color/_666666"
+                            android:textColorHint="@color/_CCCCCC"
+                            android:textSize="42px" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_line_password1"
+                        android:layout_width="810px"
+                        android:layout_height="2px"
+                        android:background="@color/_DDDDDD" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="426px"
+                android:layout_height="132px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10px"
+                android:background="@drawable/shape_66px_fcd6ab_to_f8e8c1"
+                android:enabled="false"
+                android:text="@string/at_text_login"
+                android:textColor="@color/white"
+                android:textSize="48px" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="126px"
+            android:textSize="38px" />
+    </LinearLayout>
+</com.aliyun.ayland.widget.ATObservableScrollView>

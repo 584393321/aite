@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_F5F5F5"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:titlebar_background="@color/transparent"
+        />
+
+    <com.aliyun.ayland.widget.ATClearEditText
+        android:id="@+id/et_search"
+        android:layout_width="1002px"
+        android:layout_height="108px"
+        android:layout_gravity="center"
+        android:layout_marginTop="3px"
+        android:background="@drawable/shape_147px_ffffff"
+        android:drawableLeft="@drawable/at_common_ico_shousuo"
+        android:drawablePadding="30px"
+        android:gravity="center_vertical"
+        android:hint="@string/at_search_device"
+        android:imeOptions="actionSearch"
+        android:maxLength="16"
+        android:paddingLeft="33px"
+        android:paddingRight="33px"
+        android:singleLine="true"
+        android:textColor="@color/_333333"
+        android:textCursorDrawable="@drawable/shape_15px_6px60px_fda448"
+        android:textColorHint="@color/_BBBBBB"
+        android:textSize="42px" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@android:color/white"
+        app:srlPrimaryColor="#444444">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginTop="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:id="@+id/srl_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

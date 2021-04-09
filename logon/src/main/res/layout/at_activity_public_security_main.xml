@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_F5F5F5"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_public_security" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@android:color/white"
+        app:srlPrimaryColor="#444444">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/srl_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/_F5F5F5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_public_monitoring"
+                android:layout_width="996px"
+                android:layout_height="324px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60px"
+                android:background="@drawable/at_pic_gqaf_a">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="84px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60px"
+                    android:text="@string/at_public_monitor"
+                    android:textColor="#FFFFFF"
+                    android:textSize="60px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="51px"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="184px"
+                    android:text="@string/at_check_number"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32px"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_monitoring_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="72px"
+                    android:layout_marginLeft="263px"
+                    android:layout_marginTop="174px"
+                    android:text="20"
+                    android:textColor="#FFFFFF"
+                    android:textSize="45px"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="51px"
+                    android:layout_marginLeft="402px"
+                    android:layout_marginTop="184px"
+                    android:text="@string/at_check_place"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32px"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_monitoring_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="72px"
+                    android:layout_marginLeft="605px"
+                    android:layout_marginTop="174px"
+                    android:text="10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="45px"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_public_fire"
+                android:layout_width="996px"
+                android:layout_height="324px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60px"
+                android:background="@drawable/at_pic_gqaf_b"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="84px"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="84px"
+                    android:text="@string/at_public_fire"
+                    android:textColor="#FFFFFF"
+                    android:textSize="60px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="51px"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="184px"
+                    android:text="@string/at_check_number"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/tv_fire_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="72px"
+                    android:layout_marginLeft="263px"
+                    android:layout_marginTop="174px"
+                    android:text="20"
+                    android:textColor="#FFFFFF"
+                    android:textSize="45px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="51px"
+                    android:layout_marginLeft="402px"
+                    android:layout_marginTop="184px"
+                    android:text="@string/at_check_place"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/tv_fire_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="72px"
+                    android:layout_marginLeft="605px"
+                    android:layout_marginTop="174px"
+                    android:text="10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="45px" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

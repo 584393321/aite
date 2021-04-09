@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/smartRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.header.MaterialHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/_F2F2F2">
+
+        <com.aliyun.ayland.base.autolayout.ATAutoAppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:elevation="0dp"
+            app:elevation="0dp">
+
+            <com.aliyun.ayland.base.autolayout.ATAutoCollapsingToolbarLayout
+                android:id="@+id/collapsingToolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:collapsedTitleGravity="top|center"
+                app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+                app:contentInsetStartWithNavigation="0dp"
+                app:expandedTitleGravity="top|center"
+                app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="276px"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginRight="45px"
+                        android:layout_marginTop="228px"
+                        android:background="@drawable/atbg_renliantongxing">
+
+                        <ImageView
+                            android:id="@+id/img_face"
+                            android:layout_width="162px"
+                            android:layout_height="162px"
+                            android:scaleType="fitXY"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="45px"
+                            android:src="@drawable/at_pic_s_rlgl_yiluru" />
+
+                        <TextView
+                            android:id="@+id/tv_face_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="261px"
+                            android:textColor="@color/white"
+                            android:textSize="60px" />
+
+                        <TextView
+                            android:id="@+id/tv_logging"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:drawableRight="@drawable/atico_junp_w"
+                            android:drawablePadding="-30px"
+                            android:gravity="center"
+                            android:paddingLeft="45px"
+                            android:paddingRight="45px"
+                            android:textColor="@color/white"
+                            android:textSize="42px" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@drawable/shape_top_60px_ffffff"
+                        android:layout_height="60px"/>
+                </LinearLayout>
+
+                <com.aliyun.ayland.base.autolayout.ATAutoToolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="132px"
+                    android:layout_marginTop="58px"
+                    app:layout_collapseMode="pin"
+                    app:titleTextColor="@color/_333333" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_content"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="1" >
+
+                    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+                        android:id="@+id/titlebar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:bartext="@string/at_face_manage"
+                        app:titlebar_background="@color/transparent"/>
+                </RelativeLayout>
+            </com.aliyun.ayland.base.autolayout.ATAutoCollapsingToolbarLayout>
+
+            <com.aliyun.ayland.widget.magicindicator.ATMagicIndicator
+                android:id="@+id/magicIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:background="@color/white1"
+                android:fillViewport="false"
+                app:layout_collapseMode="pin" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/_F2F2F2"
+                app:layout_collapseMode="pin" />
+        </com.aliyun.ayland.base.autolayout.ATAutoAppBarLayout>
+
+        <com.aliyun.ayland.widget.ATCustomViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFD"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

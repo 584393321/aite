@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:background="@color/_482B0D"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_login"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+            android:id="@+id/titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:title_color_drawable="@color/transparent"
+            app:titlebar_background="@color/transparent"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_phone"
+            android:layout_width="840px"
+            android:layout_height="156px"
+            android:layout_marginTop="32px"
+            android:background="@drawable/selector_81px3px_99ffffff_ffffff"
+            android:paddingLeft="60px"
+            android:paddingRight="60px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_ico_shoujihao" />
+
+            <com.aliyun.ayland.widget.ATClearEditText
+                android:id="@+id/cet_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6px"
+                android:background="@null"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@._"
+                android:gravity="center"
+                android:hint="@string/at_text_import_phonenumber"
+                android:inputType="number|textEmailAddress"
+                android:maxLength="13"
+                android:textColor="@color/white"
+                android:textColorHint="@color/_E1E1E1"
+                android:textCursorDrawable="@drawable/shape_15px_6px60px_fda448"
+                android:textSize="48px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_code"
+            android:layout_width="840px"
+            android:layout_height="156px"
+            android:layout_marginTop="90px"
+            android:background="@drawable/selector_81px3px_99ffffff_ffffff"
+            android:paddingLeft="60px"
+            android:paddingRight="60px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_ico_yanzhengma" />
+
+            <com.aliyun.ayland.widget.ATClearEditText
+                android:id="@+id/cet_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@._"
+                android:gravity="center"
+                android:hint="@string/at_import_code"
+                android:inputType="number|textEmailAddress"
+                android:maxLength="8"
+                android:textColor="@color/white"
+                android:textColorHint="@color/_E1E1E1"
+                android:textCursorDrawable="@drawable/shape_15px_6px60px_fda448"
+                android:textSize="48px"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_getcode"
+                android:layout_width="276px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:enabled="false"
+                android:gravity="end|center_vertical"
+                android:textColor="@color/_86523C"
+                android:textSize="48px"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/at_get_verification_code"
+                android:textColor="@color/_FDA448"
+                android:textSize="48px" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_can_not_recept_code"
+            android:layout_width="wrap_content"
+            android:layout_height="78px"
+            android:drawablePadding="6px"
+            android:drawableRight="@drawable/at_btn_tiaozhuan_red"
+            android:gravity="center_vertical"
+            android:text="@string/at_can_not_recept_code"
+            android:textColor="@color/_F05859"
+            android:textSize="36px"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_password"
+            android:layout_width="840px"
+            android:layout_height="156px"
+            android:background="@drawable/selector_81px3px_99ffffff_ffffff"
+            android:paddingLeft="60px"
+            android:paddingRight="60px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_ico_mima" />
+
+            <com.aliyun.ayland.widget.ATClearEditText
+                android:id="@+id/cet_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="120px"
+                android:layout_marginRight="120px"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/at_input_6_16_password"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textColor="@color/white"
+                android:textColorHint="@color/_E1E1E1"
+                android:textCursorDrawable="@drawable/shape_15px_6px60px_fda448"
+                android:textSize="48px" />
+
+            <CheckBox
+                android:id="@+id/cb_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/selector_eye_check_white"
+                android:checked="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_at_least_six"
+            android:layout_width="wrap_content"
+            android:layout_height="90px"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/at_least_six_password"
+            android:gravity="center"
+            android:textColor="@color/_F05859"
+            android:textSize="30px"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_comfirm_password"
+            android:layout_width="840px"
+            android:layout_height="156px"
+            android:background="@drawable/selector_81px3px_99ffffff_ffffff"
+            android:paddingLeft="60px"
+            android:paddingRight="60px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_ico_zaicimima" />
+
+            <com.aliyun.ayland.widget.ATClearEditText
+                android:id="@+id/cet_comfirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="120px"
+                android:layout_marginRight="120px"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/at_input_password_again1"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textColor="@color/white"
+                android:textColorHint="@color/_E1E1E1"
+                android:textCursorDrawable="@drawable/shape_15px_6px60px_fda448"
+                android:textSize="48px" />
+
+            <CheckBox
+                android:id="@+id/cb_comfirm_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/selector_eye_check_white"
+                android:checked="false" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_differ_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12px"
+            android:text="@string/at_entered_passwords_differ1"
+            android:textColor="@color/_F05859"
+            android:textSize="30px"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="840px"
+            android:layout_height="144px"
+            android:layout_marginTop="24px"
+            android:background="@drawable/selector_72px_ffb176fda448_efcdaaeeb67d"
+            android:text="@string/at_regist"
+            android:textColor="@color/white"
+            android:textSize="51px" />
+    </LinearLayout>
+</RelativeLayout>

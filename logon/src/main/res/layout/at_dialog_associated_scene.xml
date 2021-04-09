@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="816px"
+        android:layout_height="518px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_30pxffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="45px"
+            android:paddingRight="45px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:text="很抱歉"
+                android:textColor="@color/_333333"
+                android:textSize="56px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:lineSpacingExtra="10px"
+                android:text="该场景已与语音精灵关联，无法删除/修改名称。"
+                android:textColor="@color/_666666"
+                android:textSize="42px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="请先在【语音精灵】应用取消关联"
+                android:textColor="@color/_666666"
+                android:textSize="42px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="132px"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@drawable/selector_30px_ffffff_e6e6e6_bottom"
+            android:gravity="center"
+            android:text="@string/at_sure1"
+            android:textColor="@color/_EBB080"
+            android:textSize="48px"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_above="@id/tv_sure"
+            android:background="@color/_EEEEEE" />
+    </RelativeLayout>
+</RelativeLayout>

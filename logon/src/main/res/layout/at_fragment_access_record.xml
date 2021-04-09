@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="171px"
+        android:visibility="gone"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_white">
+
+            <View
+                android:layout_width="6px"
+                android:layout_height="90px"
+                android:layout_centerVertical="true"
+                android:background="@color/_EEEEEE" />
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="29px"
+                android:text="@string/at_select"
+                android:textColor="@color/_333333"
+                android:textSize="42px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24px"
+                android:layout_toRightOf="@id/tv_search"
+                android:src="@drawable/at_ic_shuaixuan" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_car_walk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_car"
+                android:layout_width="wrap_content"
+                android:layout_height="90px"
+                android:layout_marginLeft="42px"
+                android:background="@drawable/selector_18px_f3f3f3_f7de92_to_f9b49c_"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingLeft="72px"
+                android:paddingRight="72px"
+                android:text="@string/at_car"
+                android:textColor="@color/at_selector_ffffff999999"
+                android:textSize="42px" />
+
+            <RadioButton
+                android:id="@+id/rb_walk"
+                android:layout_width="wrap_content"
+                android:layout_height="90px"
+                android:layout_marginLeft="42px"
+                android:background="@drawable/selector_18px_f3f3f3_f7de92_to_f9b49c_"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="72px"
+                android:paddingRight="72px"
+                android:text="@string/at_walk"
+                android:textColor="@color/at_selector_ffffff999999"
+                android:textSize="42px" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/_F5F5F5" />
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@color/_333333"
+        app:srlPrimaryColor="@color/white">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="36px" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_human"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="36px"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

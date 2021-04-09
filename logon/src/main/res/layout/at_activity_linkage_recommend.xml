@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.aliyun.ayland.widget.titlebar.ATMyTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bartext="@string/at_morning_model" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@color/_333333"
+        app:srlPrimaryColor="@color/white">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.aliyun.ayland.widget.ATObservableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="39px"
+                android:paddingRight="39px"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30px"
+                    android:layout_height="288px">
+
+                    <ImageView
+                        android:id="@+id/img_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="174px"
+                        android:drawablePadding="24px"
+                        android:drawableLeft="@drawable/shape_3px_12px45px_fda448"
+                        android:textColor="@color/white"
+                        android:textSize="51px" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="123px"
+                    android:layout_marginTop="60px"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="45px"
+                    android:textColor="@color/_333333"
+                    android:textSize="54px"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/ll_setting_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="162px"
+                        android:background="@drawable/shape_12px_f5f5f5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="45px"
+                            android:text="@string/at_time"
+                            android:textColor="@color/_333333"
+                            android:textSize="45px" />
+
+                        <ImageView
+                            android:layout_width="90px"
+                            android:layout_height="90px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="45px"
+                            android:src="@drawable/atico_junp" />
+
+                        <TextView
+                            android:id="@+id/tv_start_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="135px"
+                            android:textColor="@color/_666666"
+                            android:textSize="42px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_repeat"
+                        android:layout_width="match_parent"
+                        android:layout_height="162px"
+                        android:layout_marginTop="24px"
+                        android:background="@drawable/shape_12px_f5f5f5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="45px"
+                            android:text="@string/at_repeat"
+                            android:textColor="@color/_333333"
+                            android:textSize="45px" />
+
+                        <ImageView
+                            android:layout_width="90px"
+                            android:layout_height="90px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="45px"
+                            android:src="@drawable/atico_junp" />
+
+                        <TextView
+                            android:id="@+id/tv_repeat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="180px"
+                            android:layout_marginRight="135px"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/_666666"
+                            android:textSize="42px" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_home_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="162px"
+                    android:background="@drawable/shape_12px_f5f5f5"
+                    android:paddingLeft="45px"
+                    android:paddingRight="45px"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_home_condition"
+                        android:layout_width="800px"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="@string/at_home_condition"
+                        android:textColor="@color/_CCCCCC"
+                        android:textSize="45px" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/atico_junp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_out_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="162px"
+                        android:background="@drawable/shape_12px_f5f5f5"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="45px"
+                        android:text="@string/at_voice_trigger"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="162px"
+                        android:background="@drawable/shape_12px_f5f5f5"
+                        android:layout_marginTop="24px"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="45px"
+                        android:text="@string/at_manual_trigger"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="123px"
+                    android:paddingLeft="45px"
+                    android:layout_marginTop="60px"
+                    android:visibility="gone"
+                    android:paddingRight="45px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_slow_open"
+                        android:textColor="@color/_333333"
+                        android:textSize="54px"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_miss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/at_missing_equipment"
+                        android:textColor="@color/_666666"
+                        android:textSize="42px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_total_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="162px"
+                    android:visibility="gone"
+                    android:layout_marginBottom="24px"
+                    android:background="@drawable/shape_12px_f5f5f5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45px"
+                        android:text="@string/at_slow_open_time"
+                        android:textColor="@color/_333333"
+                        android:textSize="45px" />
+
+                    <ImageView
+                        android:layout_width="90px"
+                        android:layout_height="90px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="45px"
+                        android:src="@drawable/atico_junp" />
+
+                    <TextView
+                        android:id="@+id/tv_total_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="135px"
+                        android:textColor="@color/_666666"
+                        android:textSize="42px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="42px"
+                    android:descendantFocusability="blocksDescendants">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overScrollMode="never" />
+                </RelativeLayout>
+            </LinearLayout>
+        </com.aliyun.ayland.widget.ATObservableScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

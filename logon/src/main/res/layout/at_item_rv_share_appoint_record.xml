@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30px"
+    android:orientation="vertical"
+    android:paddingLeft="45px"
+    android:paddingBottom="18px">
+
+    <TextView
+        android:id="@+id/tv_space_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2px"
+        android:textColor="@color/_333333"
+        android:textSize="54px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/at_appoint_subject_"
+            android:textColor="@color/_666666"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_333333"
+            android:textSize="36px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/at_appoint_time"
+            android:textColor="@color/_666666"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_333333"
+            android:textSize="36px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/at_appoint_price_"
+            android:textColor="@color/_666666"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_333333"
+            android:textSize="36px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/at_appoint_status"
+            android:textColor="@color/_666666"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/_333333"
+            android:textSize="36px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_cancel"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="90px">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="216px"
+            android:layout_height="90px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="84px"
+            android:background="@drawable/at_shape_375px_3px_ff5656"
+            android:gravity="center"
+            android:text="@string/at_appoint_cancel"
+            android:textColor="@color/_FF5656"
+            android:textSize="42px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginTop="36px"
+        android:background="@color/_F1F1F1"/>
+</LinearLayout>

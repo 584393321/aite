@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10px"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/_333333"
+        android:textSize="38px" />
+
+    <ImageView
+        android:id="@+id/img_delete"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/at_btn_shancu_b" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="32px"
+        android:layout_toLeftOf="@id/img_delete"
+        android:textColor="@color/_333333"
+        android:textSize="38px" />
+</RelativeLayout>

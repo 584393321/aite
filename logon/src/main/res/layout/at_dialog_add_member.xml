@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="816px"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/shape_18px_ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:textColor="@color/_333333"
+            android:text="@string/at_add_member"
+            android:textSize="60px" />
+
+        <TextView
+            android:id="@+id/tv_exist"
+            android:layout_width="642px"
+            android:layout_height="162px"
+            android:gravity="center"
+            android:background="@drawable/selector_12px_3pxeaeaea_f5f5f5_e6e6e6"
+            android:layout_marginTop="72px"
+            android:textColor="@color/_333333"
+            android:text="@string/at_exist_account"
+            android:textSize="51px" />
+
+        <TextView
+            android:id="@+id/tv_temporary_regist"
+            android:layout_width="642px"
+            android:layout_height="162px"
+            android:gravity="center"
+            android:background="@drawable/selector_12px_3pxeaeaea_f5f5f5_e6e6e6"
+            android:layout_marginTop="60px"
+            android:layout_marginBottom="114px"
+            android:textColor="@color/_333333"
+            android:text="@string/at_temporary_regist"
+            android:textSize="51px" />
+    </LinearLayout>
+</RelativeLayout>
